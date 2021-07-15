@@ -11,5 +11,35 @@ body {
 }
 
 .gallery {
-  
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 25vw); /* 1 row */
+    grid-gap: 15px;
 }
+
+.gallery-text {
+  margin: auto; /* required to make sure that the caption aligns with the image*/
+  width: 70%;
+  color: #000000;
+  font-size: 20px;
+  background-color: #ffffff;
+  text-align: center;
+  font-family: Comfortaa;
+}
+
+.gallery-item {
+  /*width: 50%;*/
+}
+
+.gallery-image {
+  width:  70%;
+}
+
+.styled-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.no-link-underline {
+  text-decoration: none;
+} 

@@ -48,6 +48,11 @@ body {
   animation: fadeIn 5s;
 }
 
+.move-up-on-hover figure:hover {
+  transition: transform 1.2s;
+  transform: translate(0px, -20px);
+}
+
 @keyframes fadeIn {
   0% {opacity:0;}
   100% {opacity:1;}

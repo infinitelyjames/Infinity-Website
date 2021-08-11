@@ -20,15 +20,15 @@ body {
 .gallery-text {
   margin: auto; /* required to make sure that the caption aligns with the image*/
   width: 70%;
-  color: #000000;
-  font-size: 20px;
-  background-color: #ffffff;
+  color: #bfbfbf;
+  font-size: 30px;
+  /*background-color: #ffffff;*/
   text-align: center;
   font-family: Comfortaa;
 }
 
-.gallery-item {
-  /*width: 50%;*/
+.front-image {
+  border-radius: 10%;
 }
 
 .gallery-image {

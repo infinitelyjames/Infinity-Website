@@ -11,28 +11,94 @@
     <meta content="#43B581" data-react-helmet="true" name="theme-color">-->
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../images/icon_image.png" type="image/x-icon">
-    <link href="../style.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
-  <body>
-    <p>Revisioner</p>
-    <p style="font-size: 20px;">Revisioner is an app being developped designed to aid revision by blocking potential distractions and distractive material.
-      The app will include website blocking, reminders, Ad-blocking and Screen Savers. <br>
-      The dashboard prototype art can be seen below ready to be implemented into 1.0.5:
+  <!--<style>
+    
+    body, html {
+      height: 100%;
+      color: #19232D;
+    }
+
+    .bg {
+      /* The image used */
+      background-image: url("../images/landscape_block_view.png");
+
+      /* Full height */
+      height: 100%;
+
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      object-fit: cover;
+    }
+  </style>-->
+  <body class="bg">
+    <!--<p>Revisioner</p>-->
+    <img style="padding-top: 45px;" src="../images/landscape_block_view.png" alt="Revisioner [img]">
+    <div class="gallery fade-in move-up-on-hover" style="padding-top: 50px;">
+      <figure class="gallery-item"> 
+        <img class="gallery-image front-image" src="../images/checkmark_gallery.png" alt="Discord Bots [img]">
+        <figcaption class="gallery-text">Blocks Distractions on the Internet</figcaption>
+      </figure> 
+      <figure class="gallery-item"> 
+        <img class="gallery-image front-image" src="../images/checkmark_gallery.png" alt="Revisioner [img]">
+        <figcaption class="gallery-text">Customize Websites to Block</figcaption>
+      </figure>
+      <figure class="gallery-item"> 
+        <img class="gallery-image front-image" src="../images/checkmark_gallery.png" alt="Other Projects [img]">
+        <figcaption class="gallery-text">Schedule Work and Downtime</figcaption>
+      </figure>
+    </div>
+    <p style="font-size: 60px; padding-top: 40px">Snapshots</p>
+    <div class="slideshow-container" style="padding-top: 10px;">
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <img src="../images/dashboard_dark.png" style="width:100%">
+        <div class="text">Early dark mode dashboard preview (v1.0.5)</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="../images/reminder_window_new.png" style="width:100%">
+        <div class="text">Reminders & Scheduling page (light mode)</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="../images/blockpage.png" style="width:100%">
+        <div class="text">What happens if you visit a blocked website</div>
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <p style="font-size: 20px;">Revisioner is an app under development designed to aid revision by blocking potential distractions and distractive material.
+      This includes but is not limited to website blocking, reminders (schedule website blocking to enable & disable), and Screen Savers. <br>
+      Personalisation options include light/dark mode, background images & more...
     </p>
-    <img class="fade-in" src="../images/dashboard_new.png" alt="Dashboard" style="width: 40%; border: 4px solid black;">
+    <!--<img class="fade-in" src="../images/dashboard_new.png" alt="Dashboard" style="width: 40%; border: 4px solid black; border-radius: 1%;">
     <p style="font-size: 20px;">
-      v1.0.3 has a completely different design; the whole arrangement is being reworked and improved. <br>
-      New features to v1.0.5 are the reminders and scheduling pane, which allows you to setup notifications, and when you want to enable/disable website blocking:
+     And here's the reminders page (before dark mode was implemented):
     </p>
-    <img class="fade-in" src="../images/reminder_window_new.png" alt="Dashboard" style="width: 40%; border: 4px solid black;">
+    <img class="fade-in" src="../images/reminder_window_new.png" alt="Dashboard" style="width: 40%; border: 4px solid black; border-radius: 1%;">
     <p style="font-size: 20px;">
-      After some deliberation (still v1.0.5), dark mode was added (with background image options), and some key features reworked:
+      After some deliberation (still v1.0.5), dark mode was added (with background image options - not shown), and some key features reworked:
     </p>
-    <img class="fade-in" src="../images/dashboard_dark.png" alt="Dashboard" style="width: 40%; border: 4px solid black;">
+    <img class="fade-in" src="../images/dashboard_dark.png" alt="Dashboard" style="width: 40%; border: 4px solid black; border-radius: 1%;">
     <p style="font-size: 20px;">
-      The blockpage was made dark mode only (light mode is still available <a href="https://block.infinitydev.org.uk/" class="styled-link" style="font-size: 20px;">here</a>): 
+      The blockpage was converted to dark mode only (light mode is still available <a href="https://block.infinitydev.org.uk/" class="styled-link" style="font-size: 20px;">here</a>): 
     </p>
-    <img class="fade-in" src="../images/blockpage.png" alt="Dashboard" style="width: 40%; border: 4px solid black;">
+    <img class="fade-in" src="../images/blockpage.png" alt="Dashboard" style="width: 40%; border: 4px solid black; border-radius: 1%;">-->
     <p><a href="/index.html" class="styled-link" style="font-size: 20px;">Return Home</a></p>
+    <script src="script.js"></script>
   </body>
 </html>

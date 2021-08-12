@@ -106,6 +106,12 @@ p {
   color: #ffffff;
 }
 
+pre {
+    font-family: Comfortaa;
+    font-size: 30px;
+    color: #ffffff;
+  }
+
 body {
   background-color: #19232D;
   color: white;

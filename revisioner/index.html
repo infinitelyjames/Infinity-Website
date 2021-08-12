@@ -91,6 +91,76 @@
       Linux support is a possibility, although is not currently supported. <br>
       Not available on macOS.
     </p>
+    <p style="font-size: 60px;">Changelog</p>
+    <pre style="font-size: 20px; text-align: left; padding-left: 200px;">
+Changes for v1.0.2: 
+- Added details to settings page
+- Ordered dropdown lists so that the option saved would appear as that selected
+- Changed font sizes on settings page
+- Added option to change theme colour
+- Added new update warning
+- Added error handling for Err.Permission denied hosts file etc
+- Added new user hi menu
+- Added website blocked page & webserver
+- Added import screensaver feature.
+- Added option to change theme
+Bug fixes for v1.0.2:
+- Fixed secondary loading screen crashing after 4 hits
+- Fixed website blocking button not always connecting to function
+- Fixed screen saver choice loading incorrectly in settings only on first boot
+- Fixed config file spammed with lots of empty lines
+Changes for v1.0.3 & v1.0.4:
+- Added blocked website list edit functionality
+- Added close button on Settings menu
+- Added system notification to get back to revision
+Bug Fixes for v1.0.3 & v1.0.4:
+- Fixed website blocking crashing, because instead of disconnecting the function, it executes all of them stacked
+- Fix not working well on multiple screens
+- Fixed screen saver import dropdown error
+Changes for v1.0.5:
+- New Dashboard 
+- Added slider to enable website blocking
+- Added options to enable/disable web server and notifications (redirect edit)
+- Changed debugger to fix bugs
+- Added scheduled time slots (reminder window).
+- Rendered reminders window
+- Added reminders background ccript
+- Theme colour changes colour of sliders
+- Restyled some settings window features
+- Added Discord Rich Presence
+- Added www. subdomain for websites automatically
+- Updated "new update available" page
+- Added show error log option in settings
+- Added Changelog to settings window
+- Added Main error handler
+- Added icon image for info windows
+- Added warning icon when rich presence fails
+- Added dark Mode
+- Added option to change background image
+- Updated notification favicon
+- Moved Settings window elements into multiple columns
+- Prevented insecure HTTPS loading by generating certificates
+- Added block page favicon
+- Added loading tips
+- Added Volume control
+- Updated dashboard icons
+- Added new animated loading window splash screen
+- Cursor set to "loading" when website blocking is working
+- Added upload debug logs option
+Bug Fixes for v1.0.5:
+- Updated timeouts (err. timeout too low)
+- Fixed settings title overwritten by text underneath
+- Fixed minimise windows not responding to load button pressed on corresponding window
+- Fixed table outline
+- Fixed Tooltip pattern breaking
+- Fixed buttons and lambda function exceptions
+- Fixed Website blocking enabling / disabling via reminders causes button to not respond after being changed.
+- Fixed multiple notifications for single block
+- Fixed notifications so it doesn't require loading on boot to continue responding (or put similar to loading tips here?)
+- Fixed notifications randomly cause app to crash
+- Fixed splash loading screen not closing on elevation
+- Fixed sliders not updating for website blocking when activated/deactivated using reminders
+    </pre>
     <!--<img class="fade-in" src="../images/dashboard_new.png" alt="Dashboard" style="width: 40%; border: 4px solid black; border-radius: 1%;">
     <p style="font-size: 20px;">
      And here's the reminders page (before dark mode was implemented):

@@ -1,5 +1,9 @@
 {
   "navigationFallback": {
     "rewrite": "/404.html"
-  }
+  },
+  "routes": [{
+    "route": "/revisioner",
+    "rewrite": "/revisioner/index.html"
+  }]
 }

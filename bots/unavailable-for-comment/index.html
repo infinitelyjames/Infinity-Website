@@ -13,25 +13,77 @@
     <link rel="shortcut icon" href="../../images/icon_image.png" type="image/x-icon">
     <link href="../../style.css" rel="stylesheet" type="text/css" />
     <link href="../../navbar.css" rel="stylesheet" type="text/css" />
-    <script>
-      function resizeIframe(obj) {
-        obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
-      }
-    </script>
+    <link href="localstyles.css" rel="stylesheet" type="text/css" />
   </head>
-  <script>
-    if (screen.width < 600)
-    {
-      window.location.replace("/index_mobile.html")
-    }
-  </script>
   <body>
     <div class="topnav">
       <a href="/index.html">Home</a>
-      <a class="active" href="https://ufc-bot.trainsrus.repl.co/">Discord Bots</a>
+      <a class="active" href="#home">Discord Bots</a>
       <a href="../../revisioner/index.html">Revisioner</a>
       <a href="../../projects/index.html">Projects</a>
     </div>
-    <iframe src="https://ufc-bot.trainsrus.repl.co" frameborder="0" scrolling="no" onload="resizeIframe(this)" style="width: 100%; height: 100%; overflow: auto;"></iframe>
+    <img src="../../images/extended_logo.png" style="width:50%; opacity: 0.9; margin-left: auto; margin-right: auto; display: block; padding-top: 50px; padding-bottom: 20px;" class="image-blurred-edge">
+    <button class="invitebtn" onclick="window.location.href='https://discord.com/api/oauth2/authorize?client_id=690256111282290834&permissions=104070849&redirect_uri=https%3A%2F%2FUfC-bot--trainsrus.repl.co%2Fthanks.html&response_type=code&scope=bot%20identify'">Add to Server</button>
+    <button class="joinserverbtn" onclick="window.location.href='https://discord.com/invite/nacfvPB'">Join Support Server</button>
+    <div class="gallery move-up-on-hover" style="padding-top: 20px">
+      <figure>
+        <img src="feature-images/anti_ping.png" class="gallery-image" alt="Trulli" style="width:100%">
+        <figcaption class="feature-text">Anti-Spam Protection</figcaption>
+      </figure>
+      <figure>
+        <img src="feature-images/games.png" class="gallery-image" alt="Trulli" style="width:100%">
+        <figcaption class="feature-text">Integrated Games</figcaption>
+      </figure>
+      <figure>
+        <img src="feature-images/moderation.png" class="gallery-image" alt="Trulli" style="width:100%">
+        <figcaption class="feature-text">Moderation</figcaption>
+      </figure>
+      <figure>
+        <img src="feature-images/news.png" class="gallery-image" alt="Trulli" style="width:100%">
+        <figcaption class="feature-text">Coming soon!</figcaption>
+      </figure>
+      <figure>
+        <img src="feature-images/settings.png" class="gallery-image" alt="Trulli" style="width:100%">
+        <figcaption class="feature-text">Customisation</figcaption>
+      </figure>
+      <figure>
+        <img src="feature-images/weather.png" class="gallery-image" alt="Trulli" style="width:100%">
+        <figcaption class="feature-text">Weather</figcaption>
+      </figure>
+    </div>
+    <p style="font-size: 60px;">Commands</p>
+    <p>To see all commands, use `[your prefix]help`, for an interactive menu. If you forget the prefix, @mention the bot in a channel it can speak in, and it will display its prefix.</p>
+    <p style="font-size: 60px;">Bot Statistics</p>
+    <p>Click <a href="https://statcord.com/bot/690256111282290834" class="styled-link">here to view the bot's Statcord page.</a></p>
+    <p style="font-size: 60px;">History</p>
+    <table style="width: 95%;">
+      <tr>
+        <th>Bot Started</th>
+        <td>March 2020</td>
+      </tr>
+      <tr>
+        <th>First Recorded Bot Version</th>
+        <td>v1.4.2 (alpha) 23/04/2020</td>
+      </tr>
+      <tr>
+        <th>First Bot List Approval</th>
+        <td>19th October 2020</td>
+      </tr>
+      <tr>
+        <th>First Recorded Help Menu</th>
+        <td><pre>~news - shares the latest top story
+~msg [@destination] [content] - Sends a message on behalf of the bot
+~join - Join the battle
+~lb - Battle Leaderboard
+~fight [person] - Fights a person
+~market - sees the market
+~buy [options] - Buys a weapon or protection
+(Non-changeable prefix 25/04/2020)</pre></td>
+        </tr>
+    </table>
+    <br>
+    <div class="textbox" style="padding-top: 1px; padding-bottom: 1px;">
+      <p>For more information, please contact the Infinity via the <a href="https://discord.com/invite/nacfvPB" class="styled-link">support server.</a></p>
+    </div>
   </body>
 </html>

@@ -1,0 +1,84 @@
+.textbox {
+    background-color: #19232D;
+    width:80%;
+    margin:auto;
+    border-radius: 10px;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 25vw);
+    grid-gap: 15px;
+}
+figure {
+  width: 62%;
+  padding: 4px;
+  margin: auto;
+}
+.gallery-image {
+    border-radius: 100%;
+    border: 5px #cccccc solid;
+}
+.feature-text {
+    font-family: Comfortaa;
+    color: #ffffffd7;
+    font-size: 30px;
+}
+.fade-in {
+    animation: fadeIn 5s;
+}
+
+.move-up-on-hover figure:hover {
+    transition: transform 1.2s;
+    transform: translate(0px, -20px);
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+/* Style buttons */
+.invitebtn {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.invitebtn:hover {
+    background-color: RoyalBlue;
+}
+/* Style buttons */
+.joinserverbtn {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.joinserverbtn:hover {
+background-color: RoyalBlue;
+}
+
+table, th, td {
+    font-family: Comfortaa;
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: #19232D;
+    margin:auto;
+}
+table {
+    border-radius: 10px;
+}
+th, td {
+    padding: 15px;
+}
+th {
+    text-align: left;
+}

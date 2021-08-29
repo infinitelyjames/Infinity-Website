@@ -39,32 +39,34 @@ figure {
 }
 /* Style buttons */
 .invitebtn {
-    background-color: DodgerBlue;
+    background-color: #36ba59;
     border: none;
     color: white;
     padding: 12px 30px;
     cursor: pointer;
     font-size: 20px;
+    border-radius: 5px;
 }
 
-/* Darker background on mouse-over */
+/* Darker background on mouse-over 
 .invitebtn:hover {
     background-color: RoyalBlue;
-}
+}*/
 /* Style buttons */
 .joinserverbtn {
-    background-color: DodgerBlue;
+    background-color: #6745d6;
     border: none;
     color: white;
     padding: 12px 30px;
     cursor: pointer;
     font-size: 20px;
+    border-radius: 5px;
 }
 
-/* Darker background on mouse-over */
+/* Darker background on mouse-over 
 .joinserverbtn:hover {
 background-color: RoyalBlue;
-}
+}*/
 
 table, th, td {
     font-family: Comfortaa;

@@ -84,3 +84,29 @@ th, td {
 th {
     text-align: left;
 }
+
+li:before { content: '✔'; margin-left: -20px; margin-right: 10px; } 
+
+/* The sidenav */
+.mobile-gallery {
+    width: 200px;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+}
+
+.mobile-gallery a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: Comfortaa;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+  
+.mobile-gallery a:hover {
+    color: #f1f1f1;
+}

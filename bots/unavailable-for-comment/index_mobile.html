@@ -15,12 +15,6 @@
     <link href="../../navbar.css" rel="stylesheet" type="text/css" />
     <link href="localstyles.css" rel="stylesheet" type="text/css" />
   </head>
-  <script>
-    if (screen.width < 600)
-    {
-      window.location.replace("index_mobile.html")
-    }
-  </script>
   <body>
     <div class="topnav">
       <a href="/index.html">Home</a>
@@ -30,33 +24,34 @@
     </div>
     <img src="../../images/extended_logo.png" style="width:50%; opacity: 0.9; margin-left: auto; margin-right: auto; display: block; padding-top: 50px; padding-bottom: 20px;" class="image-blurred-edge">
     <button class="invitebtn" onclick="window.location.href='https://discord.com/api/oauth2/authorize?client_id=690256111282290834&permissions=104070849&redirect_uri=https%3A%2F%2FUfC-bot--trainsrus.repl.co%2Fthanks.html&response_type=code&scope=bot%20identify'">Add to Server</button>
+    <br>
     <button class="joinserverbtn" onclick="window.location.href='https://discord.com/invite/nacfvPB'">Join Support Server</button>
-    <div class="gallery move-up-on-hover" style="padding-top: 20px">
-      <figure>
-        <img src="feature-images/anti_ping.png" class="gallery-image" alt="Trulli" style="width:100%">
-        <figcaption class="feature-text">Anti-Spam Protection</figcaption>
-      </figure>
-      <figure>
-        <img src="feature-images/games.png" class="gallery-image" alt="Trulli" style="width:100%">
-        <figcaption class="feature-text">Integrated Games</figcaption>
-      </figure>
-      <figure>
-        <img src="feature-images/moderation.png" class="gallery-image" alt="Trulli" style="width:100%">
-        <figcaption class="feature-text">Moderation</figcaption>
-      </figure>
-      <figure>
-        <img src="feature-images/news.png" class="gallery-image" alt="Trulli" style="width:100%">
-        <figcaption class="feature-text">Coming soon!</figcaption>
-      </figure>
-      <figure>
-        <img src="feature-images/settings.png" class="gallery-image" alt="Trulli" style="width:100%">
-        <figcaption class="feature-text">Customisation</figcaption>
-      </figure>
-      <figure>
-        <img src="feature-images/weather.png" class="gallery-image" alt="Trulli" style="width:100%">
-        <figcaption class="feature-text">Weather</figcaption>
-      </figure>
-    </div>
+    <!--<div class="mobile-gallery" id="mobile-gallery" style="margin: auto;"> 
+        <a href="#">Integrated Games</a>
+        <a href="#">Anti-Spam</a>
+        <a href="#">Moderation</a>
+        <a href="#">Ranks & Levelling</a>
+        <a href="#">Votes & Polls</a>
+    </div>-->
+    <p style="font-size: 20px;">Including:
+        <ul style="list-style-type: none; text-align: left; margin: auto;">
+            <li>
+                Integrated games
+            </li>
+            <li>
+                Anti-Spam
+            </li>
+            <li>
+                Moderation
+            </li>
+            <li>
+                Ranks & Levelling
+            </li>
+            <li>
+                Votes & Polls
+            </li>
+        </ul>
+    </p>
     <p style="font-size: 60px;">Commands</p>
     <p>To see all commands, use `[your prefix]help`, for an interactive menu. If you forget the prefix, @mention the bot in a channel it can speak in, and it will display its prefix.</p>
     <p style="font-size: 60px;">Bot Statistics</p>
@@ -77,7 +72,7 @@
       </tr>
       <tr>
         <th>First Recorded Help Menu</th>
-        <td><pre>~news - shares the latest top story
+        <td><pre style="white-space: pre-wrap;">~news - shares the latest top story
 ~msg [@destination] [content] - Sends a message on behalf of the bot
 ~join - Join the battle
 ~lb - Battle Leaderboard

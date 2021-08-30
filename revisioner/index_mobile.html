@@ -11,7 +11,7 @@
     <meta content="#43B581" data-react-helmet="true" name="theme-color">-->
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../images/icon_image.png" type="image/x-icon">
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="style_mobile.css" rel="stylesheet" type="text/css" />
     <link href="../navbar.css" rel="stylesheet" type="text/css" />
   </head>
   <!--<style>
@@ -35,12 +35,6 @@
       object-fit: cover;
     }
   </style>-->
-  <script>
-    if (screen.width < 600)
-    {
-      window.location.replace("index_mobile.html")
-    }
-  </script>
   <script src="https://csdvlpck1g1g.statuspage.io/embed/script.js"></script>
   <body class="bg">
     <div class="topnav">
@@ -50,8 +44,8 @@
       <a href="../projects/index.html">Projects</a>
     </div>
     <!--<p>Revisioner</p>-->
-    <img style="padding-top: 45px;" src="../images/landscape_block_view.png" alt="Revisioner [img]">
-    <div class="gallery fade-in move-up-on-hover" style="padding-top: 50px;">
+    <img style="padding-top: 45px; margin: auto; width: 100vh; max-width: 100vw;" src="../images/landscape_block_view.png" alt="Revisioner [img]">
+    <div class="gallery fade-in move-up-on-hover" style="padding-top: 50px; grid-template-columns: repeat(1, 1fr); grid-template-rows: repeat(3, 25vw); grid-gap: 200px; padding-bottom: 150px;">
       <figure class="gallery-item"> 
         <img class="gallery-image front-image" src="../images/checkmark_gallery.png" alt="Discord Bots [img]">
         <figcaption class="gallery-text">Blocks Distractions on the Internet</figcaption>
@@ -144,7 +138,7 @@
       Not available on macOS.
     </p>
     <p style="font-size: 60px;">Changelog</p>
-    <pre style="font-size: 20px; text-align: left; padding-left: 200px; width: 80vw; white-space: pre-wrap;"> <!-- vw = view width-->
+    <pre style="font-size: 20px; text-align: left; padding-left: 30px; width: 90vw; white-space: pre-wrap;"> <!-- vw = view width-->
 Changes for v1.0.2: 
 - Added details to settings page
 - Ordered dropdown lists so that the option saved would appear as that selected

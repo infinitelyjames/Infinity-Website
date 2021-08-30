@@ -13,13 +13,8 @@
     <link rel="shortcut icon" href="../images/icon_image.png" type="image/x-icon">
     <link href="../style.css" rel="stylesheet" type="text/css" />
     <link href="../navbar.css" rel="stylesheet" type="text/css" />
+    <link href="localstyles.css" rel="stylesheet" type="text/css" />
   </head>
-  <script>
-    if (screen.width < 600)
-    {
-      window.location.replace("/index_mobile.html")
-    }
-  </script>
   <body>
     <div class="topnav">
       <a href="/index.html">Home</a>
@@ -27,7 +22,55 @@
       <a href="../revisioner/index.html">Revisioner</a>
       <a class="active" href="../projects/index.html">Projects</a>
     </div>
-    <p>Something goes here, and we haven't quite figured out what yet! <br>
-    Coming soon (website under development)!</p>
+    <div id="faq">
+      <h1>Archived Projects</h1>
+      <p>For anything related to the discord bot currently in use, please see the Discord Bots section of this website. If the bot you're after is archived, look here.</p>
+      <details class="faq">
+        <summary>
+          Bob Speech-To-Text 
+        </summary>
+        <p class="detail-text">A 2016 Raspberry Pi project designed to create a computational virtual assistant. It was comprised of a variety of features, and eventually retired when more 
+          alternatives came to the market. It was never publically distributed and was designed solely for Linux.
+        </p>
+      </details>
+      <details class="faq">
+        <summary>
+          Discord Music Bot
+        </summary>
+        <p class="detail-text">
+          Started in 2020, this was a separate bot to the main Discord Bot. After recoding, it was integrated into the main bot for ~ 2 months, before being removed under a new host, 
+          with different bandwidth charges. After being recoded and tested, a day before scheduled publication it was cancelled in awake of the Groovy takedown. To this day, it stands 
+          archived in the bot's code, for owner use only.
+        </p>
+      </details>
+      <h1>Available/Present Projects</h1>
+      <details class="faq">
+        <summary>
+          Python Auto-Format & Auto-Indent
+        </summary>
+        <p class="detail-text">
+          This quirky script will solve the error, "inconsistent use of tabs and spaces in indentation", and will also make all the indentation the same throughout 
+          (you can choose which indentation length touse). In short, it neatens your code through normalising indentation.
+        </p>
+      </details>
+      <details class="faq">
+        <summary>
+          I'm not a robot / Recaptcha Solver
+        </summary>
+        <p class="detail-text">
+          As the title suggests, it solves "I'm not a robot" challenges as a robot. It screenshots the display, builds a simple dataset quickly before the Recaptcha times out, analyses 
+          the colour distribution throughout the images. This is designed for a specific type of Recaptcha, so doesn't work best on all.
+        </p>
+      </details>
+      <h1>Planned Future Projects</h1>
+      <details class="faq">
+        <summary>
+          Raspberry Pi Smartphone
+        </summary>
+        <p class="detail-text">
+          No more details available until the project is fully planned.
+        </p>
+      </details>
+    </div>
   </body>
 </html>

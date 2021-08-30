@@ -1,8 +1,15 @@
 
 
-p {
+h1 {
   font-family: Comfortaa;
   font-size: 30px;
+  color: #ffffff;
+}
+
+
+p {
+  font-family: Comfortaa;
+  font-size: 20px;
   color: #ffffff;
 }
 

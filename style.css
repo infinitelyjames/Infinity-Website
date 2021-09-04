@@ -63,7 +63,7 @@ body {
 } 
 
 .fade-in {
-  animation: fadeIn 5s;
+  animation: fadeIn 2s;
 }
 
 .move-up-on-hover figure:hover {

@@ -5,6 +5,6 @@ if (chanceOfRickAppearing == 2) {
 }
 
 function hahaGetRickrolled() {
-    console.log("get rickrolled")
-    window.location.replace("rick.html")
+    console.log("get rickrolled hehe boi")
+    window.location.replace("/rick.html")
 }

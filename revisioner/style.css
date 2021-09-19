@@ -120,14 +120,19 @@ body {
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 25vw); /* 1 row */
-    grid-gap: 15px;
+    grid-template-columns: repeat(3, 1fr); /* 1fr*/
+    grid-template-rows: repeat(1, 2vw); /* 1 row */
+    grid-gap: 0vw;
+}
+
+.gallery-item
+{
+  max-width: 25vw;
 }
 
 .gallery-text {
   margin: auto; /* required to make sure that the caption aligns with the image*/
-  width: 70%;
+  /*width: 70%;*/
   color: #bfbfbf;
   font-size: 30px;
   /*background-color: #ffffff;*/
@@ -139,9 +144,10 @@ body {
   border-radius: 10%;
 }
 
+/*
 .gallery-image {
   width:  70%;
-}
+}*/
 
 .styled-link {
   color: #ffffff;

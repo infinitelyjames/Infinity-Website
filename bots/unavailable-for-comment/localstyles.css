@@ -10,6 +10,17 @@
     grid-template-rows: repeat(2, 25vw);
     grid-gap: 15px;
 }
+.document-item
+{
+    text-decoration: none;
+}
+.document-container
+{
+    background-color: #19232D;
+    width: 50vw;
+    margin: auto;
+    border: 3px solid black;
+}
 figure {
   width: 62%;
   padding: 4px;

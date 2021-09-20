@@ -121,7 +121,7 @@ body {
 .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 1fr*/
-    grid-template-rows: repeat(1, 2vw); /* 1 row */
+    grid-template-rows: repeat(1, 25vw); /* 1 row */
     grid-gap: 0vw;
 }
 

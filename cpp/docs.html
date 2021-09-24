@@ -166,6 +166,48 @@ r
 l 
 d </pre>
     <h2 id="functions">Functions</h2>
+    <pre class="prettyprint">#include &ltiostream>
+#include &ltstring>
+
+using namespace std;
+
+/*
+A function signature is structured like below:
+&ltreturn-type> functionName(variableType parameter)
+ie.
+*/
+
+int doubleNumber(int inputNumber) // note, parameters must be declared like so in the function signature
+{
+    return inputNumber * 2;
+}
+
+string duplicateString(string inputString)
+{
+    return inputString + inputString; // concatenate the two strings together, ie. with inputString set to "hello", this function  would return "hellohello"
+}
+
+/*
+Default parameters:
+These are declared in the function signature, ie.
+*/
+
+int multiplyNumber(int inputNumber, int multiplyBy = 2) // here, multipyBy is set to 2 unless otherwise specified
+{
+    return inputNumber * multiplyBy;
+}
+
+int main()
+{
+    // For instance, we can call the function with and without specifying multiplyBy:
+    cout&lt&ltmultiplyNumber(3)&lt&ltendl; // this will use the default parameter to multiple
+    cout&lt&ltmultiplyNumber(3, 3)&lt&ltendl; // this overrides the default multiplier of 2, instead setting multiplyBy to 3.
+    return 0;
+}</pre>
+    <p>Output</p>
+    <pre class="prettyprint">6
+9</pre>
+    <h2 id="vectorarrays">Vector Arrays</h2>
     <h2 id="files">Reading and writing to files</h2>
   </body>
 </html>

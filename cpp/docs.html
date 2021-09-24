@@ -104,6 +104,8 @@ int main()
         // above, the 1 signifies that we're selecting 1 character, and this is returned to the code. For instance, if we used 2, the substr would return 2 Characters
         // note that substr returns a string, not a character variable type
     }
+    
+    return 0;
 }</pre>
     <p>Option 2 (uses subscription)</p>
     <pre class="prettyprint lang-cpp">#include &ltiostream>
@@ -120,6 +122,8 @@ int main()
         cout&lt&ltmyString[i]&lt&ltendl; // Prints every character on a new line (here the [i] signafies that we're selecting a character from position i)
         // note that this returns a variable of type character, NOT a string. This can be useful when used in conjunction with the ctypes.h library
     }
+
+    return 0;
 }</pre>
     <p>Option 3 (iterate without i)</p>
     <pre class="prettyprint lang-cpp">#include &ltiostream>
@@ -139,6 +143,8 @@ int main()
     {
         cout&lt&ltmyCharacter&lt&ltendl; // Prints every character on a new line
     }
+
+    return 0;
 }</pre>
     <p>Ouput (the output for all is the same)</p>
     <pre class="prettyprint">h

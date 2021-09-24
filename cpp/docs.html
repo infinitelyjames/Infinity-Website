@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="msvalidate.01" content="621CB6574DDDB9EDD9624076E6CC7736" /> <!-- for bing search engine indexing -->
+    <meta name="viewport" content="width=device-width">
+    <title>Infinity Developer</title>
+    <meta content="Hi, I'm Infinity." property="og:title">
+    <meta content="Resources, apps, and more related to Infinity. I mainly program python-based scripts and applications, with a few bits of web development." property="og:description">
+    <!--<meta content="https://embed.com/this-is-the-site-url" property="og:url">
+    <meta content="https://embed.com/embedimage.png" property="og:image">
+    <meta content="#43B581" data-react-helmet="true" name="theme-color">-->
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/icon_image.png" type="image/x-icon">
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <link href="/navbar.css" rel="stylesheet" type="text/css" />
+    <meta name='description' content="Infinity is a developer, currently working on numerous python programming projects, including Discord Bots, Image Recognition, Apps & more. Currently developing in Python, and a bit in C++ and web development. Discord bots include Unavailable for Comment, as well as archived music bots. Uses of image recognition involve building recaptcha solvers (those I'm not a robot things), etc.">
+  </head>
+  <body>
+    <div class="topnav">
+        <a href="/index.html">Home</a>
+        <a href="bots/unavailable-for-comment/index.html">Discord Bots</a>
+        <a href="revisioner/index.html">Revisioner</a>
+        <a href="projects/index.html">Projects</a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <h1>C++ Guide, Overview & Basics</h1>
+    <p>As you can see, not everything is on here yet. If you want something to be added, contact me on Discord.</p>
+    <h2 id="helloworld">Writing your first program</h2>
+    <p>For reference, // denotes a single-line comment in C++.</p>
+    <pre class="prettyprint lang-cpp">#include &ltiostream&gt // Importing this allows us to take input and output to the console
+
+using namespace std; // Without this, you'd have to write std::cout . In more complicated programs which use many libraries, this may prove troublesome if libraries have functions with the same name, which is when we wouldn't want to use this line of code.
+
+int main() // When we compile and run the program, the code within this function executes.
+{
+    cout<<"Hello world!"&lt&ltendl; // This outputs "Hello World!" into the console window when you run the program. endl denotes a new line after printing the hello world.
+
+    return 0; // Returns an exit status of 0 (success). Most compilers will automatically add this line if not included.
+}</pre>
+    <p>Output</p>
+    <pre class="prettyprint">Hello world!</pre>
+    <h2 id="integers">Integers and Arithmetic</h2>
+    <p>An integer is a variable type (a variable is effectively a way to store data).</p>
+    <pre class="prettyprint lang-cpp">#include &ltiostream&gt
+
+using namespace std; 
+
+int main() // When we compile and run the program, the code within this function executes.
+{
+    int myInt1; // This declares an integer. Effectively, we told the compiler that we want this variable to exist, but we haven't assigned a value to it yet.
+    myInt1 = 40; // When we first assign a value to an integer, this is called initialisation. Here, we have set the value of the integer variable, myInt1, to 40.
+
+    int myInt2 = 31; // This declares and initialises an integer value in a single line of code, effectively the same as the two lines above, except of course we've set this integer to 31 not 40.
+
+    cout<<"Value 1: "&lt&ltmyInt1&lt&ltendl; // Output the contents of myInt1 into the console
+    cout<<"Value 2: "&lt&ltmyInt2&lt&ltendl; // Output the contents of myInt2 into the console
+
+    cout<<"Multiplied: "&lt&ltmyInt1*myInt2; // outputs the numbers multiplied together. This could also be written similar to the line below
+    int divided = myInt1/myInt2&lt&ltendl; // Divide myInt1 by myInt2. Note, because they are stored in an integer, the resulting number will be rounded
+    cout<<"Divided: "&lt&ltdivided&lt&ltendl; // Output the contents of the variable divided
+    cout<<"Added: "&lt&ltmyInt1+myInt2&lt&ltendl;
+    cout<<"Subtracted: "&lt&ltmyInt1-myInt2&lt&ltendl;
+
+    return 0; // Returns an exit status of 0 (success). Most compilers will automatically add this line if not included.
+}</pre>
+    <h2 id="input">Getting user input</h2>
+    <h2 id="boolean">Boolean Variables</h2>
+    <h2 id="if">If, else ifs and else</h2>
+    <h2 id="whileloops">While Loops</h2>
+    <h2 id="forloops">For Loops Introduction</h2>
+    <h2 id="charsintro">Characters Introduction</h2>
+    <h2 id="ctypeh">Characters with the ctype.h library</h2>
+    <h2 id="strings">Strings Introduction</h2>
+    <h2 id="stringsgetline">Strings and Getline</h2>
+    <h2 id="stringsloops">Strings and For Loops</h2>
+    <p>There are many ways to write code to iterate through the contents of a string. Here, we cover 3 methods.</p>
+    <p>Option 1 (using substrings)</p>
+    <pre class="prettyprint lang-cpp">#include &ltiostream>
+#include &ltstring>
+
+using namespace std;
+
+/*
+Notes on string.length() and why i < myString.length() not i <= length():
+
+One thing to note, as that when we're getting the position of a character, substring, element of an array etc, the computer starts counting from 0.
+Hence, here's what the string "hello" would look like to the computer:
+Index / Position (i): 0 1 2 3 4
+Character:              h e l l o
+
+However, notice that this string has 5 letters, and the last letter is at position 4?
+That's why we use < not <= in the scenario below, because if we used <=, on the last iteration of the for loop, the computer would try to find position 5 (which doesn't exist), and would error / cause unexpected results.
+*/
+
+int main()
+{
+    string myString = "hello world";
+
+    for (int i = 0; i < myString.length(); i++) // Set integer i to zero at the start (i referencing index, the position of the element in the string that we're checking); Iterate while i is smaller than the length (note you cannot use <=, see comment above); Every iteration (every tine the code in the loop runs once), we increment i (add 1 to i)
+    {
+        cout&lt&ltmyString.substr(i, 1)&lt&ltendl; // Prints every character on a new line
+        // above, the 1 signifies that we're selecting 1 character, and this is returned to the code. For instance, if we used 2, the substr would return 2 Characters
+        // note that substr returns a string, not a character variable type
+    }
+}</pre>
+    <p>Option 2 (uses subscription)</p>
+    <pre class="prettyprint lang-cpp">#include &ltiostream>
+#include &ltstring>
+
+using namespace std;
+
+int main()
+{
+    string myString = "hello world";
+
+    for (int i = 0; i < myString.length(); i++) // Set integer i to zero at the start (i referencing index, the position of the element in the string that we're checking); Iterate while i is smaller than the length (note you cannot use <=, see comment above); Every iteration (every tine the code in the loop runs once), we increment i (add 1 to i)
+    {
+        cout&lt&ltmyString[i]&lt&ltendl; // Prints every character on a new line (here the [i] signafies that we're selecting a character from position i)
+        // note that this returns a variable of type character, NOT a string. This can be useful when used in conjunction with the ctypes.h library
+    }
+}</pre>
+    <p>Option 3 (iterate without i)</p>
+    <pre class="prettyprint lang-cpp">#include &ltiostream>
+#include &ltstring>
+
+using namespace std;
+
+/*
+Only use this option when we don't care about the variable i, in a case where we would have only used i to extract the character.
+*/
+
+int main()
+{
+    string myString = "hello world";
+
+    for (char &myCharacter: myString) // you may find this easier to read than option 2.
+    {
+        cout&lt&ltmyCharacter&lt&ltendl; // Prints every character on a new line
+    }
+}</pre>
+    <p>Ouput (the output for all is the same)</p>
+    <pre class="prettyprint">h
+e 
+l 
+l 
+o 
+
+w 
+o 
+r 
+l 
+d </pre>
+    <h2 id="functions">Functions</h2>
+    <h2 id="files">Reading and writing to files</h2>
+  </body>
+</html>

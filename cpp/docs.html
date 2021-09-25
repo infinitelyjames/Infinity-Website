@@ -209,5 +209,63 @@ int main()
 9</pre>
     <h2 id="vectorarrays">Vector Arrays</h2>
     <h2 id="files">Reading and writing to files</h2>
+    <pre class="prettyprint">#include &ltiostream>
+#include &ltstring>
+#include &ltfstream> // This library is required for reading and writing to files (file streams)
+
+using namespace std;
+
+string readFile(string filename)
+{
+    ifstream fileObject(filename); // Here, we initiliaze a file object. Effectively, we've setup an object to allow reading of the file, which we can then use like below
+    string fileContents; // Declares a string to save the contents of the file to.
+    string lineOfFile; // Declares a string which we'll save each line of the file to, before appending to the string fileContents.
+
+    while (getline(fileObject, lineOfFile)) // Iterate through every line in the file
+    {
+        fileContents += lineOfFile + "\n"; // Add each line of the file, to the string that we're writing its contents to, then add a newline in the string.
+    }
+
+    fileObject.close(); // Close the file object, and disassociate from the file stream
+
+    // However using the method shown above, we get an extra newline at the end of the file. To solve this, we exclude the last character, which is this newline:
+    if (fileContents.length() > 1)
+    {
+        fileContents = fileContents.substr(0, fileContents.length()-1); // exclude the last character (newline)
+    }
+
+    return fileContents;
+}
+
+void writeToFile(string filename, string contents)
+{
+    ofstream fileObject(filename); // Here, we initiliaze a file object. Effectively, we've setup an object to allow writing to the file, which we can then use like below
+
+    fileObject&lt&ltcontents; // Write the contents to the file
+    fileObject.close(); // Close the file object, and disassociate from the file stream
+}
+
+int main()
+{
+    cout&lt&ltreadFile("input.txt");
+    writeToFile("output.txt","Hello \nWorld!");
+}</pre>
+    <p>input.txt</p>
+    <pre class="prettyprint">hello this is start of the file
+
+Normally, there would be some data stored in this file...
+But I guess just read this message!
+
+file ends here</pre>
+    <p>Output (Console)</p>
+    <pre class="prettyprint">hello this is start of the file
+
+Normally, there would be some data stored in this file...
+But I guess just read this message!
+
+file ends here</pre>
+    <p>output.txt</p>
+    <pre class="prettyprint">Hello 
+World!</pre>
   </body>
 </html>

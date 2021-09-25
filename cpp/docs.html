@@ -217,7 +217,7 @@ using namespace std;
 
 string readFile(string filename)
 {
-    ifstream fileObject(filename); // Here, we initiliaze a file object. Effectively, we've setup an object to allow reading of the file, which we can then use like below
+    ifstream fileObject(filename); // Here, we initialize a file object. Effectively, we've setup an object to allow reading of the file, which we can then use like below
     string fileContents; // Declares a string to save the contents of the file to.
     string lineOfFile; // Declares a string which we'll save each line of the file to, before appending to the string fileContents.
 
@@ -239,7 +239,7 @@ string readFile(string filename)
 
 void writeToFile(string filename, string contents)
 {
-    ofstream fileObject(filename); // Here, we initiliaze a file object. Effectively, we've setup an object to allow writing to the file, which we can then use like below
+    ofstream fileObject(filename); // Here, we initialize a file object. Effectively, we've setup an object to allow writing to the file, which we can then use like below
 
     fileObject&lt&ltcontents; // Write the contents to the file
     fileObject.close(); // Close the file object, and disassociate from the file stream

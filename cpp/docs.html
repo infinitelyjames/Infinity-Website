@@ -208,6 +208,84 @@ int main()
     <pre class="prettyprint">6
 9</pre>
     <h2 id="vectorarrays">Vector Arrays</h2>
+    <pre class="prettyprint">#include &ltiostream>
+#include &ltvector>
+#include &ltstring>
+#include "modules/files.hpp" // Importing a modified version of a file handler I wrote for above code blocks from the same folder. This imports functions which allow me to read and write to files.
+
+using namespace std;
+
+vector&ltstring> splitByChar(string inputString, char splitChar = ',') // Function that takes in a string, ie. "a,b,c,d", and outputs the contents in a vector array, ie (a,b,c,d). The character to split by here is set to ',' by default.
+{
+    vector&ltstring> splitString;
+    string currentItem; // the string that will hold each individual item while being split, then empty and move onto the next item.
+
+    for (const char &character: inputString) // Iterate through every character in the string. It can be considered bad practice to change a letter in a string as you iterate through it, so here we keep it constant.
+    {
+        if (character == splitChar)
+        {
+            splitString.push_back(currentItem); // Place the currentItem at the end of the vector array
+            currentItem = ""; // Reset this to empty, and we can start appending characters to it again
+        }
+        else
+        {
+            currentItem += character;
+        }
+    }
+
+    return splitString;
+}
+
+int main()
+{
+    string fileContents = readFile("data/names.csv"); // Open the csv file, and save the whole file into one string called fileContents. This csv file is a list of names.
+    cout<<"Here's what the file looked like when we opened it:"&lt&ltendl&lt&ltfileContents&lt&ltendl; // Output the whole file's contents to the console
+    cout<<"But if we split it into a vector array, and then output each element line by line:"&lt&ltendl;
+    for (string &name: splitByChar(fileContents)) // Split the list of names from fileContents, by a ',' which places them into a vector array. Then output each element to the 
+    {
+        cout&lt&ltname&lt&ltendl;
+    }
+
+    return 0;
+}</pre>
+    <p>Output</p>
+    <pre class="prettyprint">     
+Here's what the file looked like when we opened it (note spaces have been added here to prevent it exceeding the html page border):
+David ,John ,Paul ,Mark ,James ,Andrew ,Scott ,Steven ,Robert ,Stephen ,William ,Craig ,Michael ,Stuart ,Christopher ,Alan ,Colin ,Brian ,Kevin ,Gary ,Richard ,Derek ,Martin ,Thomas ,Neil ,Barry ,Ian ,Jason ,Iain ,Gordon ,Alexander ,Graeme ,Peter ,Darren
+But if we split it into a vector array, and then output each element line by line:
+David
+John
+Paul
+Mark
+James
+Andrew
+Scott
+Steven
+Robert
+Stephen
+William
+Craig
+Michael
+Stuart
+Christopher
+Alan
+Colin
+Brian
+Kevin
+Gary
+Richard
+Derek
+Martin
+Thomas
+Neil
+Barry
+Ian
+Jason
+Iain
+Gordon
+Alexander
+Graeme
+Peter</pre>
     <h2 id="files">Reading and writing to files</h2>
     <pre class="prettyprint">#include &ltiostream>
 #include &ltstring>

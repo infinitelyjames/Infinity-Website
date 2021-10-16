@@ -87,12 +87,16 @@ table, th, td {
     border-collapse: collapse;
     background-color: #19232D;
     margin:auto;
+    max-width: 90vw;
 }
 table {
     border-radius: 10px;
 }
 th, td {
     padding: 15px;
+}
+td {
+    max-width: 80vw;
 }
 th {
     text-align: left;

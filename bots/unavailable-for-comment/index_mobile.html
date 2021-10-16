@@ -14,6 +14,12 @@
     <link href="../../style.css" rel="stylesheet" type="text/css" />
     <link href="../../navbar.css" rel="stylesheet" type="text/css" />
     <link href="localstyles.css" rel="stylesheet" type="text/css" />
+
+    <!-- Statuspage ad-ons -->
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script> 
+    <!-- Statuspage ad-ons standard dependencies -->
+    <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-bundle.js"></script> 
+    <script src="https://unpkg.com/@statuspage/status-widget/dist/index.js"></script> 
   </head>
   <script src="https://csdvlpck1g1g.statuspage.io/embed/script.js"></script>
   <script>
@@ -31,6 +37,9 @@
       <a href="../../projects/index.html">Projects</a>
     </div>
     <img src="../../images/extended_logo.png" style="width:50%; opacity: 0.9; margin-left: auto; margin-right: auto; display: block; padding-top: 50px; padding-bottom: 20px;" class="image-blurred-edge">
+    <div style="padding-bottom: 20px; padding-top: 0px;">
+      <statuspage-widget appearance="basic" src="https://unavailablebot.statuspage.io/" style="font-family: Comfortaa; color: #ffffffd7;"></statuspage-widget>
+    </div>
     <button class="invitebtn" onclick="window.location.href='https://discord.com/api/oauth2/authorize?client_id=690256111282290834&permissions=104070849&redirect_uri=https%3A%2F%2FUfC-bot--trainsrus.repl.co%2Fthanks.html&response_type=code&scope=bot%20identify'">Add to Server</button>
     <br>
     <button class="joinserverbtn" onclick="window.location.href='https://discord.com/invite/nacfvPB'">Join Support Server</button>
@@ -85,14 +94,7 @@
       </tr>
       <tr>
         <th>First Recorded Help Menu</th>
-        <td><pre style="white-space: pre-wrap;">~news - shares the latest top story
-~msg [@destination] [content] - Sends a message on behalf of the bot
-~join - Join the battle
-~lb - Battle Leaderboard
-~fight [person] - Fights a person
-~market - sees the market
-~buy [options] - Buys a weapon or protection
-(Non-changeable prefix 25/04/2020)</pre></td>
+        <td><pre style="white-space: pre-wrap; width: 20vw"><b>Use a larger screen to view this</b></pre></td>
         </tr>
     </table>
     <br>

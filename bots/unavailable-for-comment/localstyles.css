@@ -88,6 +88,7 @@ table, th, td {
     background-color: #19232D;
     margin:auto;
     max-width: 90vw;
+    white-space: pre-wrap;
 }
 table {
     border-radius: 10px;

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Unavailable for Comment Discord Bot - Infinity Developer</title>
+    <meta content="Infinity's Discord Bots" property="og:title">
+    <meta content="Unavailable for Comment is the primary discord bot run by Infinity." property="og:description">
+    <!--<meta content="https://embed.com/this-is-the-site-url" property="og:url">
+    <meta content="https://embed.com/embedimage.png" property="og:image">
+    <meta content="#43B581" data-react-helmet="true" name="theme-color">-->
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../../images/icon_image.png" type="image/x-icon">
+    <link href="../../style.css" rel="stylesheet" type="text/css" />
+    <link href="../../navbar.css" rel="stylesheet" type="text/css" />
+    <link href="localstyles.css" rel="stylesheet" type="text/css" />
+    <meta name='description' content='Unavailable for Comment Discord Bot is run by Infinity, and features moderation, games, rick-roll protection, voting, ranks, logging and more!'>
+    <meta http-equiv='content-language' content='en-gb'>
+
+    <!-- Statuspage ad-ons -->
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script> 
+    <!-- Statuspage ad-ons standard dependencies -->
+    <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-bundle.js"></script> 
+    <script src="https://unpkg.com/@statuspage/status-widget/dist/index.js"></script> 
+
+    <!-- Google Charts-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Time', 'Average Latency /ms'],
+          ['02:00',  1000],
+          ['05:00',  1170],
+          ['08:00',  660],
+          ['11:00',  1030]
+        ]);
+
+        var options = {
+          title: 'Latency',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+
+            
+      }
+    </script>
+  </head>
+  <script>
+    if (screen.width < 600)
+    {
+      window.location.replace("index_mobile.html")
+    }
+  </script>
+  
+  <body style="max-width: 100vw; overflow-x: hidden;">
+    <script src="https://csdvlpck1g1g.statuspage.io/embed/script.js"></script>
+    <div class="topnav">
+      <a href="/index.html">Home</a>
+      <a class="active" href="#home">Discord Bots</a>
+      <a href="../../revisioner/index.html">Revisioner</a>
+      <a href="../../projects/index.html">Projects</a>
+    </div>
+    <img src="../../images/extended_logo.png" alt="logo" style="width:50%; opacity: 0.9; margin-left: auto; margin-right: auto; display: block; padding-top: 50px; padding-bottom: 0px; max-width: 95vw;" class="image-blurred-edge">
+    <h1>Bot Statistics and Status</h1>
+    <div style="padding-bottom: 10px; padding-top: 0px;">
+        <statuspage-widget appearance="basic" src="https://unavailablebot.statuspage.io/" style="font-family: Comfortaa; color: #ffffffd7;"></statuspage-widget>
+    </div>
+    <div id="curve_chart" style="width: 40vw; height: 25vw; margin: auto;"></div>
+    <p>Click <a href="https://statcord.com/bot/690256111282290834" class="styled-link">here to view the bot's Statcord page.</a></p>
+    <br>
+    <div class="textbox" style="padding-top: 1px; padding-bottom: 1px;">
+      <p>For more information, please contact the Infinity via the <a href="https://discord.com/invite/nacfvPB" class="styled-link">support server.</a></p>
+    </div>
+  </body>
+</html>

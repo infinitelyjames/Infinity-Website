@@ -111,3 +111,28 @@ body {
 .closebtn:hover {
   color: black;
 }
+
+
+table, th, td {
+  font-family: Comfortaa;
+  border-collapse: collapse;
+  margin:auto; 
+  max-width: 90vw;
+  white-space: pre-line;
+  overflow: hidden;
+}
+table {
+  border-radius: 10px;
+}
+th, td {
+  padding: 5px;
+  width: 33vw;
+  text-align: left;
+}
+td {
+  max-width: 80vw;
+}
+th {
+  text-align: left;
+  padding-bottom: 0px;
+}

@@ -50,14 +50,14 @@ figure {
 }
 /* Style buttons */
 .invitebtn {
-    background-color: #6745d6;/*#36ba59;*/
+    background-color: #3023e2;/*#36ba59;*/
     border: none;
     color: white;
     padding: 12px 30px;
     cursor: pointer;
     font-size: 20px;
     border-radius: 5px;
-    border: 2px solid #6745d6;
+    border: 2px solid #3023e2;
 }
 
 /* Darker background on mouse-over 
@@ -68,12 +68,12 @@ figure {
 .joinserverbtn {
     background-color: transparent;
     border: none;
-    color: #6745d6;
+    color: rgba(3, 143, 236, 0.829);
     padding: 12px 30px;
     cursor: pointer;
     font-size: 20px;
     border-radius: 5px;
-    border: 2px solid #6745d6;
+    border: 2px solid #3023e2;
 }
 
 /* Darker background on mouse-over 

@@ -1,0 +1,12 @@
+[
+    {
+        "version":"1.0.5", 
+        "changelog":"Thanks to those who have given feedback in the trials of v1.0.2 - v1.0.4. More details on the update are available at https://www.infinitydev.org.uk/revisioner/index.html",
+        "forceupdate":false
+    },
+    {
+        "version":"1.0.7",
+        "changelog":"This version brings many updates included a reworked dashboard, new tasks feature set to merge with reminders, and many bug fixes alongside improvements in ease of use (includes auto-updater).",
+        "forceupdate":true
+    }
+]

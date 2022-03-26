@@ -41,11 +41,105 @@ body {
   background: linear-gradient(90deg, rgba(50,1,93,1) 0%, rgba(9,9,121,1) 35%, rgba(2,191,230,1) 100%);*/
   background: rgb(99,9,121);
   /*background: linear-gradient(90deg, rgba(99,9,121,1) 3%, rgba(50,1,93,1) 38%, rgba(9,9,121,1) 98%);*/
-  background-image: url('images/codebg_right_zoom_part_t.png'), linear-gradient(90deg, rgba(99,9,121,1) 3%, rgba(50,1,93,1) 38%, rgba(9,9,121,1) 98%);
   background-size: cover;
   color: white;
   text-align: center;
+  overflow-x: hidden;
 }
+
+html {
+  font-size: 65%;
+}
+
+.colouredimgbg {
+  background-image: url('images/codebg_right_zoom_part_t.png'), linear-gradient(90deg, rgba(99,9,121,1) 3%, rgba(50,1,93,1) 38%, rgba(9,9,121,1) 98%);
+}
+
+.colouredbg {
+  background-image: linear-gradient(90deg, rgba(99,9,121,1) 3%, rgba(50,1,93,1) 38%, rgba(9,9,121,1) 98%);
+}
+
+.basicbg {
+  background-color: #2c2c2e;
+}
+
+.indexbg {
+  background-image: url('images/codebg2.png');
+  background-size: cover;
+}
+
+.nobold {
+  font-weight: normal;
+}
+
+.centercontainer {
+  position: absolute;
+  left: 50%; /* relative to nearest positioned ancestor or body element */
+  top: 50%; /*  relative to nearest positioned ancestor or body element */
+  transform: translate(-50%, -50%); /* relative to element's height & width */
+}
+
+.indexheadline {
+  font-family: Comfortaa;
+  font-size: 6vw;
+  color: #ffffff;
+  margin-bottom: 0px;
+}
+
+.indexlowertext {
+  font-family: Comfortaa;
+  font-size: 1.5vw;
+  color: #ffffff;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0.1vw;
+  width: 100%;
+  text-align: center;
+}
+
+.socialbox {
+  border: 1px solid #ffffff;
+  font-family: Comfortaa;
+  font-size: 1.2vw;
+  color: #ffffff;
+  display: inline-block;
+  padding: 0.5vw;
+  margin-bottom: 0px;
+  border-radius: 0.4vw;
+  margin: 0px 0.05vw 0px 0.05vw;
+}
+
+.socialicon {
+  max-height: 1vw;
+}
+
+.indexnav {
+  padding-top: 0.5vw;
+}
+
+.navbox {
+  border: 1px solid #6e5cf7;
+  font-family: Comfortaa;
+  font-size: 2vw;
+  color: #ffffff;
+  display: inline-block;
+  padding: 0.5vw;
+  margin-bottom: 0px;
+  border-radius: 0.2vw;
+  margin: 0px 0.05vw 0px 0.05vw;
+}
+
+.navtext {
+  color: #6e5cf7;
+}
+
+.navicon {
+  max-height: 2vw;
+}
+
 
 /*
 .bgimgcontent {
@@ -107,9 +201,9 @@ body {
   animation: fadeIn 2s;
 }
 
-.move-up-on-hover figure:hover {
+.move-up-on-hover:hover {
   transition: transform 1.2s;
-  transform: translate(0px, -20px);
+  transform: translate(0px, -0.2vw);
 }
 
 @keyframes fadeIn {

@@ -48,8 +48,24 @@
         <div class="socialbox">
             <a href="mailto:support@infinitydev.org.uk" target="_blank" class="styled-link"><img src="images/email.png" alt="Email" class="socialicon"> Email</a>
         </div>
+        <div class="socialbox" id="creditsBtn">
+            <a href="javascript:void(0);" class="styled-link"><img src="images/email.png" alt="Email" class="socialicon"> Credits</a>
+        </div>
     </div>
+
+    <!-- Popups and modal content below-->
+
+    <!-- Popup for the credits -->
+    <div id="creditsMenu" class="creditsMenu fade-in" hidden>
+        <div class="creditsMenuContents">
+            <span class="closeCredits">&times;</span>
+            <p>This website is managed and maintained by Infinity. <br>Thanks to Diacius for help making this website possible. </p>
+            <p style="padding-top: 1vh;">You can view and fork this website freely on <a href="https://github.com/TrainsRAwesome/Infinity-Website" class="no-link-underline styled-link">GitHub</a>, although please comply with the license details available there.</p>
+        </div>
+    </div>
+
     <script src="./indexbio.js"></script>
+    <script src="./indexcredits.js"></script>
   </body>
 
 </html>

@@ -47,6 +47,10 @@ body {
   overflow-x: hidden;
 }
 
+.hidealloverflow {
+  overflow: hidden;
+}
+
 html {
   font-size: 65%;
 }

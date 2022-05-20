@@ -10,6 +10,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700;900&display=swap" rel="stylesheet">
         <link rel="shortcut icon" href="images/icon_image.png" type="image/x-icon">
         <link href="style.css" rel="stylesheet" type="text/css" />
+        <link href="mobileadjust.css" rel="stylesheet" type="text/css" />
         <!--<link href="navbar.css" rel="stylesheet" type="text/css" /> not needed on this page any more-->
         <meta name='description' content="Infinity is a developer, currently working on numerous python programming projects, including Discord Bots, Image Recognition, Apps & more. Currently developing in Python, and a bit in C++ and web development. Discord bots include Unavailable for Comment, as well as archived music bots. Uses of image recognition involve building recaptcha solvers (those I'm not a robot things), etc.">
     </head>
@@ -39,21 +40,48 @@
 
     <!--footer and stuff I guess-->
     <div class="footer">
-        <div class="socialbox">
-            <a href="https://discord.gg/nacfvPB" target="_blank" class="styled-link"><img src="images/discord.png" alt="Discord" class="socialicon"> Discord</a>
+
+        <!-- bottom waves  -->
+        <div class="bottomwaves">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="position:relative; display:block; bottom:0;" class="footer" id="svgwaves">
+                <path fill="#0099ff" fill-opacity="0.4" d="M0,192L48,202.7C96,213,192,235,288,213.3C384,192,480,128,576,106.7C672,85,768,107,864,133.3C960,160,1056,192,1152,197.3C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
         </div>
-        <div class="socialbox">
-            <a href="https://www.snapchat.com/add/infinitelydev" target="_blank" class="styled-link"><img src="images/snapchat_ghostlogo.png" alt="Snapchat" class="socialicon"> Snapchat</a>
+
+        <div class="socials">
+
+            <div class="socialboxwrapper">
+                <div class="socialbox">
+                    <a href="https://discord.gg/nacfvPB" target="_blank" class="styled-link"><img src="images/discord.png" alt="Discord" class="socialicon"> <span class="socialtext">Discord</span></a>
+                </div>
+            </div>
+            
+            <div class="socialboxwrapper">
+                <div class="socialbox">
+                    <a href="https://www.snapchat.com/add/infinitelydev" target="_blank" class="styled-link"><img src="images/snapchat_ghostlogo.png" alt="Snapchat" class="socialicon"> <span class="socialtext">Snapchat</span></a>
+                </div>
+            </div>
+            
+            <div class="socialboxwrapper">
+                <div class="socialbox">
+                    <a href="https://github.com/TrainsRAwesome/Infinity-Website" target="_blank" class="styled-link"><img src="images/github.png" alt="GitHub" class="socialicon"> <span class="socialtext">GitHub</span></a>
+                </div>
+            </div>
+            
+            <div class="socialboxwrapper">
+                <div class="socialbox">
+                    <a href="mailto:support@infinitydev.org.uk" target="_blank" class="styled-link"><img src="images/email.png" alt="Email" class="socialicon"> <span class="socialtext">Email</span></a>
+                </div>
+            </div>
+            
+            <div class="socialboxwrapper">
+                <div class="socialbox" id="creditsBtn">
+                    <a href="javascript:void(0);" class="styled-link"><img src="images/copyright.png" alt="Copyright" class="socialicon"> <span class="socialtext">Credits</span></a>
+                </div>
+            </div>
+
         </div>
-        <div class="socialbox">
-            <a href="https://github.com/TrainsRAwesome/Infinity-Website" target="_blank" class="styled-link"><img src="images/github.png" alt="GitHub" class="socialicon"> GitHub</a>
-        </div>
-        <div class="socialbox">
-            <a href="mailto:support@infinitydev.org.uk" target="_blank" class="styled-link"><img src="images/email.png" alt="Email" class="socialicon"> Email</a>
-        </div>
-        <div class="socialbox" id="creditsBtn">
-            <a href="javascript:void(0);" class="styled-link"><img src="images/copyright.png" alt="Copyright" class="socialicon"> Credits</a>
-        </div>
+        
     </div>
 
     <!-- Popups and modal content below-->
@@ -67,7 +95,7 @@
             <p style="padding-top: 1vh;">You can view and fork this website freely on <a href="https://github.com/TrainsRAwesome/Infinity-Website" target="_blank" class="no-link-underline styled-link">GitHub</a>, although please comply with the license details available there.</p>
         </div>
     </div>
-
+    
     <script defer src="./indexbio.js"></script>
     <script src="./indexcredits.js"></script>
     <!-- particles -->

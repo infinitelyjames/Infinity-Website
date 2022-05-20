@@ -1,0 +1,40 @@
+@media screen and (max-width: 600px) {
+    *{
+        font-size: 4vw;
+    }
+    .socialicon {
+        max-height: 3vw;
+        break-after: always;
+
+    }
+    .indexheadline {
+        font-size: 13vw;
+        max-width: 98vw;
+        width: 100vw;
+    }
+    .indexlowertext {
+        font-size: 4vw;
+        max-width: 96vw;
+        width: 100vw;
+    }
+    .socialbox {
+        padding-top: 0.5vh;
+        width: 90%;
+        border-radius: 2vw;
+    }
+    .socialtext:before {
+        content: "\A";
+        white-space: pre-line;
+    }
+    .socialboxwrapper {
+        padding-bottom: 1vh;
+    }
+    .bottomwaves {
+        max-height: 50vh;
+    }
+    #svgwaves {
+        width: 140vw;
+        left: 0;
+        bottom: 0;
+    }
+  }

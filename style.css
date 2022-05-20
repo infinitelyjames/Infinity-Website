@@ -127,9 +127,12 @@ html {
   bottom: 0.1vw;
   width: 100%;
   text-align: center;
+
 }
 
 .socialbox {
+  position: sticky;
+  bottom: 0;
   border: 1px solid #ffffff;
   font-family: Comfortaa;
   font-size: 1.2vw;
@@ -330,3 +333,28 @@ th {
   text-align: left;
   padding-bottom: 9px;
 }
+
+.bottomwaves {
+  position: absolute;
+  display: block;
+  bottom: 0;
+  width: 100vw;
+  max-height: 27vh;
+  color: transparent;
+}
+
+.socialboxwrapper {
+  bottom: 0.1vw;
+  width: 100%;
+  text-align: center;
+  max-width: 100%;
+  margin: 0;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  
+}
+

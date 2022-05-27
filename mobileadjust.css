@@ -37,4 +37,10 @@
         left: 0;
         bottom: 0;
     }
+    .pageheadline {
+        font-size: 8vw;
+    }
+    .pagetext {
+        font-size: 4vw;
+    }
   }

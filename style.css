@@ -203,14 +203,13 @@ html {
   position: absolute;
   width: 50%;
   max-width: 50vw;
-  height: 100%;
   right: 0;
   padding-top: 10vh;
 }
 
 .bottomwaves {
   bottom: 0; 
-  position: absolute; 
+  position: absolute;
   width: 100vw;
 }
 
@@ -225,7 +224,7 @@ html {
   position: absolute;
   width: 50%;
   max-width: 50vw;
-  height: 100%;
+
 }
 
 

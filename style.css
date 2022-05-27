@@ -1,8 +1,19 @@
 #particles-js{
-  width: 100%;
-  height: 100%;
-  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  position: relative; /*CHANGED FROM FIXED*/
+  top: 0;
+  left: 0;
 }
+
+body {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: none;
+  padding: none;
+}
+
 
 h1 {
   font-family: Comfortaa;
@@ -74,12 +85,41 @@ li {
   left: 0;
 }
 
+#homepage {
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  padding: none;
+  margin: none;
+  border: none;
+}
+
+body {
+  text-align: center;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+.fullpage {
+  width: 100vw;
+  height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+  padding: none;
+  margin: none;
+  background-color: #737db9;
+}
+
 .hidealloverflow {
   overflow: hidden;
 }
 
 html {
-  font-size: 65%;
+  margin: none;
+  padding: none;
+  scroll-behavior: smooth;
 }
 
 .colouredimgbg {
@@ -117,6 +157,78 @@ html {
   margin-bottom: 0px;
 }
 
+.pageheadline {
+  font-family: Comfortaa;
+  font-size: 5vw;
+  color: #ffffffa4;
+  margin-bottom: 0px;
+  text-align: left;
+}
+
+.pagetext {
+  text-align: left;
+  color: #ffffff8e;
+  font-size: 1.3vw;
+}
+
+.centeredwithin {
+  margin: 0 auto;
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  flex-flow: wrap;
+}
+
+.readmoretext {
+  color: #ffffff;
+}
+
+.readmorebox {
+  border: none;
+  font-family: Comfortaa;
+  font-size: 1.3vw;
+  color: #ffffff;
+  display: inline-block;
+}
+
+.centeredwithin hr {
+  width: 100%;
+  height: 1px;
+  color: transparent;
+  visibility: hidden;
+}
+
+.righttextwrapper {
+  position: absolute;
+  width: 50%;
+  max-width: 50vw;
+  height: 100%;
+  right: 0;
+  padding-top: 10vh;
+}
+
+.bottomwaves {
+  bottom: 0; 
+  position: absolute; 
+  width: 100vw;
+}
+
+.lefticonimage {
+  width: 60%;
+  position: absolute;
+  left: 5vw;
+  top: 5vw;
+}
+
+.lefticonwrapper {
+  position: absolute;
+  width: 50%;
+  max-width: 50vw;
+  height: 100%;
+}
+
+
 .indexlowertext {
   font-family: Comfortaa;
   font-size: 1.5vw;
@@ -124,7 +236,7 @@ html {
 }
 
 .footer {
-  position: fixed;
+  position: absolute; /*CHANGED FROM FIXED*/
   left: 0;
   bottom: 0.1vw;
   width: 100%;
@@ -336,7 +448,7 @@ th {
   padding-bottom: 9px;
 }
 
-.bottomwaves {
+.bottomwavesindex {
   position: absolute;
   display: block;
   bottom: 0;
@@ -344,6 +456,7 @@ th {
   max-height: 27vh;
   color: transparent;
 }
+
 
 .socialboxwrapper {
   bottom: 0.1vw;

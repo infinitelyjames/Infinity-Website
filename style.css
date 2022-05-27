@@ -60,7 +60,7 @@ li {
   background: #888; 
 }
 
-body {
+.homepage {
   /*background-color: #36393F;
   background: rgb(50,1,93); 
   background: linear-gradient(90deg, rgba(50,1,93,1) 0%, rgba(9,9,121,1) 35%, rgba(2,191,230,1) 100%);*/
@@ -70,6 +70,8 @@ body {
   color: white;
   text-align: center;
   overflow-x: hidden;
+  top: 0;
+  left: 0;
 }
 
 .hidealloverflow {

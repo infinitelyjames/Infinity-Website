@@ -201,10 +201,11 @@ html {
 
 .righttextwrapper {
   position: absolute;
-  width: 50%;
-  max-width: 50vw;
+  width: 60%;
+  max-width: 60vw;
   right: 0;
   padding-top: 10vh;
+  padding-right: 1vw;
 }
 
 .bottomwaves {
@@ -222,8 +223,8 @@ html {
 
 .lefticonwrapper {
   position: absolute;
-  width: 50%;
-  max-width: 50vw;
+  width: 40%;
+  max-width: 40vw;
 
 }
 

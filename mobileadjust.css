@@ -43,4 +43,10 @@
     .pagetext {
         font-size: 4vw;
     }
+    .righttextwrapper {
+        padding-top: 18vh;
+    }
+    .lefticonimage {
+        padding-top: 30vh;
+    }
   }

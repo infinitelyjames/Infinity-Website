@@ -113,7 +113,7 @@ body {
   background: linear-gradient(90deg, rgba(205,165,219,1) 18%, rgba(102,109,156,1) 100%);
 }
 
-#botlogo {
+.pagelogo {
   border-radius: 3vw;
 }
 

@@ -12,6 +12,7 @@ body {
   left: 0;
   margin: none;
   padding: none;
+  background-color: #000; /* so that it doesn't look horribly white when loading */
 }
 
 

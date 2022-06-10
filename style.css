@@ -6,6 +6,24 @@
   left: 0;
 }
 
+#rightclickmenu {
+  position: fixed;
+  background-color: #1e1f21;
+  border: 0.1vw solid #adadad;
+  border-radius: 0.2vw;
+  top: 0;
+  padding-top: 0.2vw;;
+}
+
+.menutext {
+  color: #ffffff;
+  font-size: 1.2vw;
+  padding: 0.5vw;
+  text-align: left;
+  font-family: Comfortaa;
+  margin: 0;
+}
+
 body {
   position: relative;
   top: 0;

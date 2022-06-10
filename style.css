@@ -17,8 +17,10 @@
 
 .menutext {
   color: #ffffff;
-  font-size: 1.2vw;
-  padding: 0.5vw;
+  font-size: 1vw;
+  padding: 0.3vw;
+  padding-left: 0.6vw;
+  padding-right: 0.6vw;
   text-align: left;
   font-family: Comfortaa;
   margin: 0;

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>You're offline</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700;900&display=swap" rel="stylesheet">
+  </head>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Emoji:wght@300&display=swap');
+
+body {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: none;
+  padding: none;
+  background-color: #000; /* so that it doesn't look horribly white when loading */
+  overflow: hidden;
+}
+
+.colouredbg {
+  background-image: linear-gradient(90deg, rgba(99,9,121,1) 3%, rgba(50,1,93,1) 38%, rgba(9,9,121,1) 98%);
+}
+
+h1 {
+  font-family: Comfortaa;
+  text-align: left;
+  color: #ffffff;
+}
+
+p {
+  font-family: Comfortaa;
+  color: #ffffff;
+  text-align: left;
+}
+
+.centercontainer {
+  position: absolute;
+  left: 50%; /* relative to nearest positioned ancestor or body element */
+  top: 50%; /*  relative to nearest positioned ancestor or body element */
+  transform: translate(-50%, -50%); /* relative to element's height & width */
+}
+
+.wifi {
+  font-family: 'Noto Emoji', sans-serif;
+}
+
+
+  </style>
+  <body class="colouredbg" style="height: 100vh; width: 100vw;">
+    <div class="centercontainer" style="display: flex;">
+      <div style="max-width: 30%; left: 0; padding-right: 2vw;">
+        <h1 style="font-size: 11vw; margin: 0;" class="wifi">📶</h1>
+      </div>
+      <div style="max-width: 70%; right: 0;">
+        <h1 style="font-size: 3vw;">Page unavailable</h1>
+        <p style="font-size: 1.8vw;">You can't access this page as you are currently offline. </p>
+      </div>
+      
+    </div>
+  </body>
+</html>

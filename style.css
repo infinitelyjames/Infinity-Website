@@ -499,3 +499,18 @@ th {
   
 }
 
+.backbtnwrapper {
+  position: fixed;
+  top: 2vh;
+  left: 3vw;
+  z-index: 1;
+}
+
+.backbtn {
+  font-family: Comfortaa;
+  font-size: 1vw;
+  background-color: #333333;
+  color: #026ccf;
+  border-radius: 0.4vw;
+  border: 0.1vw solid #026ccf;
+}

@@ -98,9 +98,11 @@ th, td {
 }
 td {
     max-width: 80vw;
+    color: white;
 }
 th {
     text-align: left;
+    color: white;
 }
 
 li:before { content: '✔'; margin-left: -20px; margin-right: 10px; } 

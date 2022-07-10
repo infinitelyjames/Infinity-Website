@@ -237,8 +237,7 @@ html {
 
 .bottomwaves {
   bottom: 0px;
-  height: 100vh;
-  max-height: 30vh;
+  height: 30vh;
   position: absolute;
   width: 100vw;
   justify-content: baseline;
@@ -252,10 +251,20 @@ html {
   z-index: 1;
 }
 
-.wavessvg {
+.bottomwavessvg {
   width: 100%;
+  height: 20vh;
   bottom: 0;
   left: 0;
+  position: absolute;
+
+}
+
+.topwavessvg {
+  width: 100%;
+  height: 20vh;
+  top: 0px;
+  left: 0px;
   position: absolute;
 }
 

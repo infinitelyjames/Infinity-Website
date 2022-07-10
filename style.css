@@ -126,10 +126,10 @@ body {
 .fullpage {
   width: 100vw;
   height: 100vh;
-  max-height: 100vh;
   overflow: hidden;
   padding: none;
   margin: none;
+  position: relative;
   background: rgb(205,165,219);
   background: linear-gradient(90deg, rgba(205,165,219,1) 18%, rgba(102,109,156,1) 100%);
 }
@@ -235,9 +235,19 @@ html {
 }
 
 .bottomwaves {
-  bottom: 0; 
+  bottom: 0px;
+  height: 100vh;
+  max-height: 30vh;
   position: absolute;
   width: 100vw;
+  justify-content: baseline;
+}
+
+.wavessvg {
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  position: absolute;
 }
 
 .lefticonimage {
@@ -474,7 +484,7 @@ th {
   padding-bottom: 9px;
 }
 
-.bottomwavesindex {
+.bottomwavesindex { /* no idea where this came from*/
   position: absolute;
   display: block;
   bottom: 0;

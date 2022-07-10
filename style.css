@@ -512,6 +512,11 @@ th {
   color: transparent;
 }
 
+#indexsvgwaves {
+  bottom: 0px;
+  width: 100vw;
+  height: 25vh;
+}
 
 .socialboxwrapper {
   bottom: 0.1vw;

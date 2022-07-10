@@ -232,6 +232,7 @@ html {
   right: 0;
   padding-top: 25vh;
   padding-right: 1vw;
+  z-index: 2;
 }
 
 .bottomwaves {
@@ -263,6 +264,7 @@ html {
   position: absolute;
   left: 5vw;
   top: 24vh;
+  z-index: 2;
 }
 
 .lefticonwrapper {

@@ -230,7 +230,7 @@ html {
   width: 60%;
   max-width: 60vw;
   right: 0;
-  padding-top: 10vh;
+  padding-top: 25vh;
   padding-right: 1vw;
 }
 
@@ -241,6 +241,14 @@ html {
   position: absolute;
   width: 100vw;
   justify-content: baseline;
+  z-index: 1;
+}
+
+.topwaves {
+  position: absolute;
+  top: 0px;
+  width: 100vw;
+  z-index: 1;
 }
 
 .wavessvg {
@@ -254,7 +262,7 @@ html {
   width: 60%;
   position: absolute;
   left: 5vw;
-  top: 5vw;
+  top: 24vh;
 }
 
 .lefticonwrapper {

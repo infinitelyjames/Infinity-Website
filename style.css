@@ -12,7 +12,8 @@
   border: 0.1vw solid #adadad;
   border-radius: 0.2vw;
   top: 0;
-  padding-top: 0.2vw;;
+  padding-top: 0.2vw;
+  z-index: 5;
 }
 
 .menutext {

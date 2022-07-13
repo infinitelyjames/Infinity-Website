@@ -294,7 +294,7 @@ html {
 .footer {
   position: absolute; /*CHANGED FROM FIXED*/
   left: 0;
-  bottom: 0.1vw;
+  bottom: 0px;
   width: 100%;
   text-align: center;
 
@@ -507,7 +507,7 @@ th {
 .bottomwavesindex { /* no idea where this came from*/
   position: absolute;
   display: block;
-  bottom: 0;
+  bottom: 0px;
   width: 100vw;
   max-height: 27vh;
   color: transparent;

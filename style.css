@@ -522,11 +522,11 @@ th {
 }
 
 .socialboxwrapper {
-  bottom: 0.1vw;
   width: 100%;
   text-align: center;
   max-width: 100%;
   margin: 0;
+  padding-bottom: 0.3vh;
 }
 
 .socials {

@@ -303,14 +303,16 @@ html {
 .socialbox {
   position: sticky;
   bottom: 0;
-  border: 1px solid #ffffff;
+  /*border: 1px solid #ffffff;*/
+  background-color: #202ef5;
+  opacity: 0.75;
   font-family: Comfortaa;
   font-size: 1.2vw;
   color: #ffffff;
   display: inline-block;
   padding: 0.5vw;
   margin-bottom: 0px;
-  border-radius: 0.4vw;
+  border-radius: 0.9vw;
   margin: 0px 0.05vw 0px 0.05vw;
 }
 
@@ -531,7 +533,6 @@ th {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  
 }
 
 .backbtnwrapper {

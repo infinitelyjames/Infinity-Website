@@ -150,6 +150,11 @@ body {
   background-size: cover;
 }
 
+.bg4 {
+  background: url("images/bg/4.png");
+  background-size: cover;
+}
+
 .pagelogo {
   border-radius: 3vw;
 }

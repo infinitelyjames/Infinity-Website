@@ -16,10 +16,11 @@
 }
 .document-container
 {
-    background-color: #19232D;
+    background-color: rgba(25, 35, 45, 0.5);
     width: 50vw;
     margin: auto;
-    border: 3px solid black;
+    padding: 0.2vh 1vw;
+    border-radius: 1vw;
 }
 figure {
   width: 62%;
@@ -68,7 +69,7 @@ figure {
 .joinserverbtn {
     background-color: transparent;
     border: none;
-    color: rgba(3, 143, 236, 0.829);
+    color: #3023e2;
     padding: 12px 30px;
     cursor: pointer;
     font-size: 20px;

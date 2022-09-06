@@ -135,6 +135,21 @@ body {
   background: linear-gradient(90deg, rgba(205,165,219,1) 18%, rgba(102,109,156,1) 100%);
 }
 
+.bg1 {
+  background: url("images/bg/1.png");
+  background-size: cover;
+}
+
+.bg2 {
+  background: url("images/bg/2.png");
+  background-size: cover;
+}
+
+.bg3 {
+  background: url("images/bg/3.png");
+  background-size: cover;
+}
+
 .pagelogo {
   border-radius: 3vw;
 }
@@ -187,14 +202,15 @@ html {
 .pageheadline {
   font-family: Comfortaa;
   font-size: 5vw;
-  color: #ffffffa4;
+  color: #ffffffc5;
   margin-bottom: 0px;
+  margin-top: 0px;
   text-align: left;
 }
 
 .pagetext {
   text-align: left;
-  color: #ffffff8e;
+  color: #ffffffd2;
   font-size: 1.3vw;
 }
 
@@ -231,9 +247,12 @@ html {
   width: 60%;
   max-width: 60vw;
   right: 0;
-  padding-top: 25vh;
-  padding-right: 1vw;
+  margin-top: 25vh;
+  margin-right: 1vw;
+  padding: 2vh 1vw 2vh 1vw;
   z-index: 2;
+  border-radius: 2vw;
+  background-color: rgba(59, 59, 59, 0.5);
 }
 
 .bottomwaves {
@@ -243,6 +262,7 @@ html {
   width: 100vw;
   justify-content: baseline;
   z-index: 1;
+  opacity: 0.4;
 }
 
 .topwaves {
@@ -250,6 +270,7 @@ html {
   top: 0px;
   width: 100vw;
   z-index: 1;
+  opacity: 0.4;
 }
 
 .bottomwavessvg {

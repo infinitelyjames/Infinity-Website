@@ -1,62 +1,57 @@
 .faq {
-    --padding: 16px;
-    width: 80%;
-    margin: auto;
-    background-color: #42454d;
-  }
-  
-  
-  details {
-    font-family: Comfortaa;
-    font-size: 15px;
-    color: #ffffff;
-    padding: 0 var(--padding);
-    box-shadow: inset 0 0 0 4px;
-    border-radius: 4px;
-  }
-  
-  .detail-text {
-    font-size: 20px;
-    text-align: left;
-  }
-  
-  summary {
-    font-family: Comfortaa;
-    font-size: 15px;
-    color: #ffffff;
-    outline: 1px solid #33264a;
-  }
-  
-  details[open] > summary {
-    box-shadow: 0 4px;
-  }
-  /* Adds an icon when the <details> is closed... */
-  details > summary::after {
-    content: "+";
-  }
-  /* ...and switches it when <details> is open */
-  details[open] > summary::after {
-    content: "-";
-  }
-  /* Removes the ugly default arrow on Chrome */
-  details > summary::-webkit-details-marker {
-    display: none;
-  }
-  
-  details[open] {
-    padding-bottom: var(--padding);
-  }
-  
-  details > summary {
-    display: flex;
-    padding: var(--padding);
-    margin: 0 calc(var(--padding) * -1);
-    border-radius: 4px;
-    font-size: 24px;
-    cursor: pointer;
-    justify-content: space-between;
-    list-style: none; /* Hides the default arrow */
-  }
-  details[open] > summary {
-    box-shadow: 0 4px;
-  }
+  --padding: 16px;
+  width: 80%;
+  margin: auto;
+  background-color: rgba(66, 69, 77, 0.5);
+}
+
+
+details {
+  font-family: Comfortaa;
+  font-size: 15px;
+  color: #ffffff;
+  padding: 0 var(--padding);
+  border-radius: 1vw;
+}
+
+.detail-text {
+  font-size: 20px;
+  text-align: left;
+}
+
+summary {
+  font-family: Comfortaa;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+
+/* Adds an icon when the <details> is closed... */
+details > summary::after {
+  content: "+";
+}
+/* ...and switches it when <details> is open */
+details[open] > summary::after {
+  content: "-";
+}
+/* Removes the ugly default arrow on Chrome */
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] {
+  padding-bottom: var(--padding);
+}
+
+details > summary {
+  display: flex;
+  padding: var(--padding);
+  margin: 0 calc(var(--padding) * -1);
+  border-radius: 4px;
+  font-size: 24px;
+  cursor: pointer;
+  justify-content: space-between;
+  list-style: none; /* Hides the default arrow */
+}
+
+

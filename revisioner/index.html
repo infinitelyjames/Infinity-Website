@@ -119,7 +119,7 @@
       <span class="dot" onclick="currentSlide(7)"></span>
     </div>
     <div style="padding-left: 10vw; padding-right: 10vw; padding-top: 4vh;">
-      <div class="alert warning" style="background-color: #ff9800; padding-top: 1px; padding-bottom: 1px;">
+      <div class="alert warning" style="background-color: rgba(255, 152, 0, 0.8); padding-top: 1px; padding-bottom: 1px; border-radius: 1vw;">
         <span class="closebtn" style="font-size: 30px; padding-top: 10px;">&times;</span>  
         <p style="font-size: 20px;"><strong>Some information might be outdated</strong> - we're currently working to rebuild this project in electron.</p>
         
@@ -161,22 +161,6 @@
           Planned mobile support for Android.
         </p>
       </details>
-    </div>
-    <p style="font-size: 60px;">System Requirements</p>
-    <p style="font-size: 20px;">Available for Windows 10 & 11 in 32-bit & 64-bit versions. <br>
-      Linux support is a possibility, although is not currently supported. <br>
-      Not available on macOS. <br>
-      Mobile app for android may be available in the future.
-    </p>
-    <div id="faq">
-      <p style="font-size: 60px;">App FAQ & Docs</p>
-      <details class="faq">
-        <summary>
-          The website blocking doesn't work immediately
-        </summary>
-        <p class="detail-text">
-          Due to browser caching, the website may continue to load unblocked for up to ~10 minutes after enabling website blocking. Close all browser windows and re-open if the issue persists.</p>
-      </details>
       <details class="faq">
         <summary>
           I want to import a Screen Saver, but it's .exe
@@ -207,6 +191,12 @@
         </p>
       </details>
     </div>
+    <p style="font-size: 60px;">System Requirements</p>
+    <p style="font-size: 20px;">Available for Windows 10 & 11 in 32-bit & 64-bit versions. <br>
+      Linux support is a possibility, although is not currently supported. <br>
+      Not available on macOS. <br>
+      Mobile app for android may be available in the future.
+    </p>
     <p style="font-size: 60px;">About</p>
     <p style="font-size: 20px;">
       Revisioner is programmed in Python in conjunction with Qt (PyQt). Most windows utilise Qt features, although the loading splash screen is using tkinter. The app is exported 

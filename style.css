@@ -155,6 +155,11 @@ body {
   background-size: cover;
 }
 
+.bg5 {
+  background: url("images/bg/5.png");
+  background-size: cover;
+}
+
 .pagelogo {
   border-radius: 3vw;
 }

@@ -61,7 +61,7 @@ pre {
 
 p {
   font-family: Comfortaa;
-  font-size: 20px;
+  font-size: 1vw;
   color: #ffffff;
 }
 
@@ -201,7 +201,7 @@ html {
   top: 50%; /*  relative to nearest positioned ancestor or body element */
   transform: translate(-50%, -50%); /* relative to element's height & width */
   background-color: rgba(135, 135, 135, 0.2);
-  padding: 1vw;
+  padding: 0.5vw;
   border-radius: 1vw;
   display: flex;
   width: 80%;
@@ -216,16 +216,26 @@ html {
   left: 0;
   width: 70%;
   max-width: 70%;
+  padding: 0.5vw;
 }
 
 #rightsection {
+  text-align: left;
   right: 0;
-  width: 30%;
   max-width: 30%;
+  padding: 0.5vw;
+}
+
+#discordwrapper {
+  display: flex;
+  background-color: rgba(100, 100, 100, 0.2);
+  border-radius: 1.8vw;
+  padding: 0.5vw;
 }
 
 .profilepic {
-  border-radius: 50%;
+  border-radius: 20%;
+  width: 40%;
   max-width: 100%;
   display: inline;
 }

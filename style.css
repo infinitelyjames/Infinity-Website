@@ -345,6 +345,7 @@ html {
   margin-bottom: 0px;
   border-radius: 0.9vw;
   margin: 0px 0.05vw 0px 0.05vw;
+  box-shadow: rgba(100, 100, 111, 1) 0px 7px 29px 0px;
 }
 
 .socialicon {
@@ -365,7 +366,14 @@ html {
   margin-bottom: 0px;
   border-radius: 0.2vw;
   margin: 0px 0.05vw 0px 0.05vw;
+  box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
 }
+
+/*
+.navbox:hover {
+  box-shadow: 10px 10px rgba(0,0,0,0.8); rgba(0,0,0,0.4);*
+}
+*/
 
 .navtext {
   color: #6e5cf7;

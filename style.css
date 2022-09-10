@@ -206,6 +206,7 @@ html {
   display: flex;
   width: 80%;
   margin: 1vw;
+  max-width: 100%;
 }
 
 .inlineelement {

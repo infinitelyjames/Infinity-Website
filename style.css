@@ -228,14 +228,29 @@ html {
 
 #discordwrapper {
   display: flex;
-  background-color: rgba(100, 100, 100, 0.2);
+  background-color: rgba(49, 49, 49, 0.655);
   border-radius: 1.8vw;
   padding: 0.5vw;
+}
+
+#discordstatusdetails {
+  display: flex;
+  padding: 0.5vw;
+}
+
+#profiletext::first-letter {
+  text-transform: capitalize; /* capitalize first letter*/
+}
+
+#discordactivitysubheading {
+  text-align: center;
+  font-size: 1.25vw;
 }
 
 .profilepic {
   border-radius: 20%;
   width: 40%;
+  height: 40%;
   max-width: 100%;
   display: inline;
 }

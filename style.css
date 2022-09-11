@@ -200,7 +200,7 @@ html {
   left: 50%; /* relative to nearest positioned ancestor or body element */
   top: 50%; /*  relative to nearest positioned ancestor or body element */
   transform: translate(-50%, -50%); /* relative to element's height & width */
-  background-color: rgba(135, 135, 135, 0.2);
+  background-color: rgba(68, 68, 68, 0.2);
   padding: 0.5vw;
   border-radius: 1vw;
   display: flex;
@@ -229,9 +229,10 @@ html {
 
 #discordwrapper {
   display: flex;
-  background-color: rgba(49, 49, 49, 0.655);
+  background-color: rgba(49, 49, 49, 0.4);
   border-radius: 1.8vw;
   padding: 0.5vw;
+  border: 2px solid rgba(255, 255, 255, 0.2);
 }
 
 #discordstatusdetails {

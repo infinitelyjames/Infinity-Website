@@ -17,10 +17,10 @@
 }
 
 .individualstatus {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.07);
     margin-top: 0.2vw;
     margin-bottom: 0.2vw;
-    padding: 0.2vw;
-    border-radius: 0.4vw;
+    padding: 0.3vw;
+    border-radius: 0.6vw;
     overflow: hidden;
 }

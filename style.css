@@ -237,6 +237,18 @@ html {
 #discordstatusdetails {
   display: flex;
   padding: 0.5vw;
+  
+}
+
+#profiletext {
+  margin: 0px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 6; /* number of lines to show */
+          line-clamp: 6; 
+  -webkit-box-orient: vertical;
+  
 }
 
 #profiletext::first-letter {

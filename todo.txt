@@ -3,3 +3,5 @@
 - mobie long status formatting bug - done
 - loading screen?
 - profile link
+- align discord profile center horizontally
+- cool Hi, I'm infinity animated font color

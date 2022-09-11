@@ -221,6 +221,7 @@ html {
 }
 
 #rightsection {
+  align-self: center;
   text-align: left;
   right: 0;
   max-width: 30%;

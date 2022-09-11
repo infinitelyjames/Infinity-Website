@@ -1,3 +1,4 @@
-- status colours
-- auto-update status
+- status colours - done
+- auto-update status - done
+- mobie long status formatting bug
 - loading screen?

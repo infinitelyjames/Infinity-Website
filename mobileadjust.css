@@ -8,14 +8,47 @@
 
     }
     .indexheadline {
-        font-size: 13vw;
+        font-size: 10vw;
         max-width: 98vw;
-        width: 100vw;
     }
     .indexlowertext {
         font-size: 4vw;
         max-width: 96vw;
-        width: 100vw;
+    }
+    #leftsection {
+        width: 100%;
+        max-width: 100%;
+    }
+    #rightsection {
+        width: 100%;
+        max-width: 100%;
+    }
+    #rightcontainer {
+        max-width: 80vw;
+        width:80vw;
+    }
+    .inlineelement {
+        display: block;
+    }
+    
+    #profiletext * {
+        font-size: 1.6vw;
+        -webkit-line-clamp: 8; /* number of lines to show */
+          line-clamp: 8; 
+    }
+    #discordwrapper {
+        width: 60%;
+        margin: auto;
+    }
+
+    #discordactivitysubheading {
+        font-size: 3vw; 
+        text-align: center;
+    }
+    .centercontainer {
+        flex-direction: column;
+        border-radius: 4vw;
+        align-items: center;
     }
     .socialbox {
         padding-top: 0.5vh;

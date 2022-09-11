@@ -61,7 +61,7 @@ pre {
 
 p {
   font-family: Comfortaa;
-  font-size: 20px;
+  font-size: 1vw;
   color: #ffffff;
 }
 
@@ -200,6 +200,74 @@ html {
   left: 50%; /* relative to nearest positioned ancestor or body element */
   top: 50%; /*  relative to nearest positioned ancestor or body element */
   transform: translate(-50%, -50%); /* relative to element's height & width */
+  background-color: rgba(68, 68, 68, 0.2);
+  padding: 0.5vw;
+  border-radius: 1vw;
+  display: flex;
+  width: 80%;
+  margin: 1vw;
+  max-width: 100%;
+}
+
+.inlineelement {
+  display: inline;
+}
+
+#leftsection {
+  left: 0;
+  width: 70%;
+  max-width: 70%;
+  padding: 0.5vw;
+}
+
+#rightsection {
+  text-align: left;
+  right: 0;
+  max-width: 30%;
+  padding: 0.5vw;
+}
+
+#discordwrapper {
+  display: flex;
+  background-color: rgba(49, 49, 49, 0.4);
+  border-radius: 1.8vw;
+  padding: 0.5vw;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+#discordstatusdetails {
+  display: flex;
+  padding: 0.5vw;
+  
+}
+
+#profiletext {
+  margin: 0px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 6; /* number of lines to show */
+          line-clamp: 6; 
+  -webkit-box-orient: vertical;
+  
+}
+
+#profiletext::first-letter {
+  text-transform: capitalize; /* capitalize first letter*/
+}
+
+#discordactivitysubheading {
+  text-align: center;
+  font-size: 1.25vw;
+}
+
+.profilepic {
+  border-radius: 20%;
+  width: 40%;
+  height: 40%;
+  max-width: 100%;
+  display: inline;
+  align-self: center;
 }
 
 .indexheadline {
@@ -345,6 +413,7 @@ html {
   margin-bottom: 0px;
   border-radius: 0.9vw;
   margin: 0px 0.05vw 0px 0.05vw;
+  box-shadow: rgba(100, 100, 111, 1) 0px 7px 29px 0px;
 }
 
 .socialicon {
@@ -365,7 +434,14 @@ html {
   margin-bottom: 0px;
   border-radius: 0.2vw;
   margin: 0px 0.05vw 0px 0.05vw;
+  box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
 }
+
+/*
+.navbox:hover {
+  box-shadow: 10px 10px rgba(0,0,0,0.8); rgba(0,0,0,0.4);*
+}
+*/
 
 .navtext {
   color: #6e5cf7;

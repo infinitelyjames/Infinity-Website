@@ -11,6 +11,7 @@
         <link rel="shortcut icon" href="images/icon_image.png" type="image/x-icon">
         <link href="style.css" rel="stylesheet" type="text/css" />
         <link href="mobileadjust.css" rel="stylesheet" type="text/css" />
+        <link href="discordcolors.css" rel="stylesheet" type="text/css" />
         <!--<link href="navbar.css" rel="stylesheet" type="text/css" /> not needed on this page any more-->
         <meta name='description' content="Infinity is a developer, currently working on numerous python programming projects, including Discord Bots, Image Recognition, Apps & more. Currently developing in Python, and a bit in C++ and web development. Discord bots include Unavailable for Comment, as well as archived music bots. Uses of image recognition involve building recaptcha solvers (those I'm not a robot things), etc.">
         <script src="/load_offline.js"></script>
@@ -23,23 +24,39 @@
         <div id="particles-js" >
             <!-- center page content, profile summary-->
             <div class="centercontainer">
-                <h1 class="nobold indexheadline">Hi, I'm Infinity!</h1>
-                <p class="indexlowertext" id="typewrite"></p>
+                <!-- left container section -->
+                <div id="leftsection" class="inlineelement">
+                    <h1 class="nobold indexheadline">Hi, I'm Infinity!</h1>
+                    <p class="indexlowertext" id="typewrite"></p>
 
-                <!-- main website navigator selector thingy -->
-                <div class="indexnav">
-                    <div class="navbox move-up-on-hover">
-                        <a href="#revisioner" class="no-link-underline navtext">Revisioner ❯</a> <!--./revisioner/-->
-                        <!--<img src="images/revisioner.png" class="navicon" alt="Revisioner">-->
+                    <!-- main website navigator selector thingy -->
+                    <div class="indexnav">
+                        <div class="navbox move-up-on-hover">
+                            <a href="#revisioner" class="no-link-underline navtext">Revisioner ❯</a> <!--./revisioner/-->
+                            <!--<img src="images/revisioner.png" class="navicon" alt="Revisioner">-->
+                        </div>
+                        <div class="navbox move-up-on-hover">
+                            <a href="#discordbots" class="no-link-underline navtext">Discord Bots ❯</a>
+                        </div>
+                        <div class="navbox move-up-on-hover">
+                            <a href="#projects" class="no-link-underline navtext">Projects ❯</a>
+                        </div>
+                        
                     </div>
-                    <div class="navbox move-up-on-hover">
-                        <a href="#discordbots" class="no-link-underline navtext">Discord Bots ❯</a>
-                    </div>
-                    <div class="navbox move-up-on-hover">
-                        <a href="#projects" class="no-link-underline navtext">Projects ❯</a>
-                    </div>
-                    
                 </div>
+
+                <!-- right container section-->
+                <div id="rightsection" class="inlineelement">
+                    <p id="discordactivitysubheading">Discord Activity</p>
+                    <div id="discordwrapper">
+                        <img src="https://cdn.discordapp.com/avatars/684835388505849879/a449e54e9222491abe8ccbf17a125335.png?size=1024" class="profilepic" alt="Profile Picture">
+                        <div id="discordstatusdetails">
+                            <p id="profiletext">Loading...</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                
             </div>
 
             <!--footer and stuff I guess-->
@@ -217,6 +234,7 @@
     </div>
     <script src="./rightclick.js"></script>
     <script src="./keyboardshortcuts.js"></script>
+    <script src="./discordstatus.js"></script>
   </body>
 
 </html>

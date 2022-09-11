@@ -19,6 +19,10 @@
         width: 100%;
         max-width: 100%;
     }
+    #rightsection {
+        width: 100%;
+        max-width: 100%;
+    }
     #rightcontainer {
         max-width: 80vw;
         width:80vw;
@@ -26,17 +30,17 @@
     .inlineelement {
         display: block;
     }
-    .profilepic {
-
-        width: 70%;
-        max-width: 70%;
-    }
-    #profiletext {
-        font-size: 3vw;
+    
+    #profiletext * {
+        font-size: 1.6vw;
+        -webkit-line-clamp: 8; /* number of lines to show */
+          line-clamp: 8; 
     }
     #discordwrapper {
-        overflow-x: auto;
+        width: 60%;
+        margin: auto;
     }
+
     #discordactivitysubheading {
         font-size: 3vw; 
         text-align: center;

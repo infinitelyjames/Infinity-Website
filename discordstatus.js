@@ -33,7 +33,7 @@ function updateStatus() {
                 text += "</div>";
             }
             data.data.activities.forEach(addActivity);
-            text = text.substring(0, text.length - 4); // remove the last <br>
+            //text = text.substring(0, text.length - 4); // remove the last <br>
             /*if (text.length > 100) {
                 text = text.substring(0, 100) + "...";
             }*/

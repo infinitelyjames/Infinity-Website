@@ -2,3 +2,4 @@
 - auto-update status - done
 - mobie long status formatting bug - done
 - loading screen?
+- profile link

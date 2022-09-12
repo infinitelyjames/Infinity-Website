@@ -11,6 +11,10 @@
         font-size: 10vw;
         max-width: 98vw;
     }
+    #indexheadlinetext {
+        font: 10vw'Montserrat';
+        margin: 0 auto;
+    }
     .indexlowertext {
         font-size: 4vw;
         max-width: 96vw;

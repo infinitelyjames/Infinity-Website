@@ -10,6 +10,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700;900&display=swap" rel="stylesheet">
         <link rel="shortcut icon" href="images/icon_image.png" type="image/x-icon">
         <link href="style.css" rel="stylesheet" type="text/css" />
+        <link href="fancyindextext.css" rel="stylesheet" type="text/css" />
         <link href="mobileadjust.css" rel="stylesheet" type="text/css" />
         <link href="discordcolors.css" rel="stylesheet" type="text/css" />
         <!--<link href="navbar.css" rel="stylesheet" type="text/css" /> not needed on this page any more-->
@@ -26,7 +27,20 @@
             <div class="centercontainer">
                 <!-- left container section -->
                 <div id="leftsection" class="inlineelement">
-                    <h1 class="nobold indexheadline">Hi, I'm Infinity!</h1>
+                    <!--<h1 class="nobold indexheadline">Hi, I'm Infinity!</h1>-->
+                    <svg id="indexheadlinesvg">
+                        <symbol id="s-text">
+                            <text text-anchor="middle" x="50%" y="80%" id="indexheadlinetext">Hi, I'm Infinity!</text>
+                        </symbol>
+                    
+                        <g class = "g-ants">
+                            <use xlink:href="#s-text" class="text-copy"></use>
+                            <use xlink:href="#s-text" class="text-copy"></use>
+                            <use xlink:href="#s-text" class="text-copy"></use>
+                            <use xlink:href="#s-text" class="text-copy"></use>
+                            <use xlink:href="#s-text" class="text-copy"></use>
+                        </g>
+                    </svg>
                     <p class="indexlowertext" id="typewrite"></p>
 
                     <!-- main website navigator selector thingy -->

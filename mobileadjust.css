@@ -34,7 +34,9 @@
     .inlineelement {
         display: block;
     }
-    
+    .navbox {
+        margin-top: 0.5vh;
+    }
     #profiletext * {
         font-size: 1.6vw;
         -webkit-line-clamp: 8; /* number of lines to show */

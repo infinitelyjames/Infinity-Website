@@ -4,4 +4,6 @@
 - loading screen?
 - profile link
 - align discord profile center horizontally - done
-- cool Hi, I'm infinity animated font color - https://alvarotrigo.com/blog/css-text-animations/
+- cool Hi, I'm infinity animated font color - https://alvarotrigo.com/blog/css-text-animations/ - done
+- border animation for discord profile card https://www.sliderrevolution.com/resources/css-border-animation/ - done
+- organise files into folders

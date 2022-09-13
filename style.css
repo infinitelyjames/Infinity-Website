@@ -226,14 +226,55 @@ html {
   right: 0;
   max-width: 30%;
   padding: 0.5vw;
+  overflow: hidden;
 }
 
 #discordwrapper {
   display: flex;
-  background-color: rgba(49, 49, 49, 0.4);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(39, 39, 39, 0.9)); /* rgba(49, 49, 49, 0.4)*/
   border-radius: 1.8vw;
   padding: 0.5vw;
-  border: 2px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+  margin: 1px;
+  /*border: 2px solid rgba(255, 255, 255, 0.2); 
+  */
+}
+
+#rainbowwrapper { /* , #rainbowwrapper:after*/
+  margin: 0;
+	content: '';
+	position: relative;
+	background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+		#0000ff, #00ff00,#ffff00, #ff0000);
+  background-size: 500%;
+	width: 100%;/*calc(100% + 4px);*/  
+  border-radius: 1.8vw;
+	z-index: -1;
+	animation: steam 40s linear infinite;
+  overflow: hidden;
+
+}
+
+@keyframes steam {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 400% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+
+
+.individualstatus {
+  background-color: rgba(255, 255, 255, 0.07);
+  margin-top: 0.2vw;
+  margin-bottom: 0.2vw;
+  padding: 0.3vw;
+  border-radius: 0.6vw;
+  overflow: hidden;
 }
 
 #discordstatusdetails {

@@ -1,4 +1,4 @@
 .vscode/launch.json
 extras/*
 tests/*
-todo.txt
+todo/*

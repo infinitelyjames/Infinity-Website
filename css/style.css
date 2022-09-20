@@ -136,27 +136,27 @@ body {
 }
 
 .bg1 {
-  background: url("images/bg/1.png");
+  background: url("/images/bg/1.png");
   background-size: cover;
 }
 
 .bg2 {
-  background: url("images/bg/2.png");
+  background: url("/images/bg/2.png");
   background-size: cover;
 }
 
 .bg3 {
-  background: url("images/bg/3.png");
+  background: url("/images/bg/3.png");
   background-size: cover;
 }
 
 .bg4 {
-  background: url("images/bg/4.png");
+  background: url("/images/bg/4.png");
   background-size: cover;
 }
 
 .bg5 {
-  background: url("images/bg/5.png");
+  background: url("/images/bg/5.png");
   background-size: cover;
 }
 
@@ -175,7 +175,7 @@ html {
 }
 
 .colouredimgbg {
-  background-image: url('images/codebg_right_zoom_part_t.png'), linear-gradient(90deg, rgba(99,9,121,1) 3%, rgba(50,1,93,1) 38%, rgba(9,9,121,1) 98%);
+  background-image: url('/images/codebg_right_zoom_part_t.png'), linear-gradient(90deg, rgba(99,9,121,1) 3%, rgba(50,1,93,1) 38%, rgba(9,9,121,1) 98%);
 }
 
 .colouredbg {
@@ -187,7 +187,7 @@ html {
 }
 
 .indexbg {
-  background-image: url('images/codebg2.png');
+  background-image: url('/images/codebg2.png');
   background-size: cover;
 }
 

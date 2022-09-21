@@ -229,3 +229,7 @@ details > summary {
 }
 
 
+.backbtn {
+  font-size: 4vw;
+  border-radius: 1vw;
+}

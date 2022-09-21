@@ -107,6 +107,20 @@ li {
   left: 0;
 }
 
+.fakepage {
+  width: 100vw;
+  height: 100vh;
+  background-color: lightgreen;
+}
+
+.element-visible{
+  visibility: visible;
+}
+
+.default-hidden{
+  visibility: hidden;
+}
+
 #homepage {
   width: 100vw;
   height: 100vh;
@@ -115,6 +129,8 @@ li {
   padding: none;
   margin: none;
   border: none;
+  position: fixed;
+  z-index: 3;
 }
 
 body {

@@ -20,7 +20,7 @@
 
   <body class="fade-in"> <!-- -->
 
-    <div class="fullpage indexbg homepage" id="homepage">
+    <div class="fullpage indexbg homepage" id="homepage" hidden>
 
         <div id="particles-js" >
             <!-- center page content, profile summary-->
@@ -148,6 +148,8 @@
         </div>
 
     </div>
+    <!-- fake page since above is rendered as fixed -->
+    <div class="fakepage"></div>
 
     <!-- Revisioner -->
     <div class="fullpage bg1" id="revisioner" style="max-height: 100%;">
@@ -161,7 +163,7 @@
             <img src="images/revisioner_nobg.png" alt="Revisioner" class="lefticonimage">
         </div>
         
-        <div class="righttextwrapper">
+        <div class="default-hidden righttextwrapper reveal fade-in">
             <div class="centeredwithin">
                 <h1 class="nobold pageheadline">Revisioner</h1>
                 <hr>
@@ -195,7 +197,7 @@
             <img src="./bots/unavailable-for-comment/feature-images/logo.png" alt="Discord Bots" class="lefticonimage pagelogo">
         </div>
         
-        <div class="righttextwrapper">
+        <div class="default-hidden righttextwrapper reveal">
             <div class="centeredwithin">
                 <h1 class="nobold pageheadline">Discord Bots</h1>
                 <hr>
@@ -225,7 +227,7 @@
             <img src="images/projects.png" alt="Revisioner" class="lefticonimage pagelogo">
         </div>
         
-        <div class="righttextwrapper">
+        <div class="default-hidden righttextwrapper reveal">
             <div class="centeredwithin">
                 <h1 class="nobold pageheadline">Projects</h1>
                 <hr>
@@ -252,6 +254,7 @@
     <script src="/js/rightclick.js"></script>
     <script src="/js/keyboardshortcuts.js"></script>
     <script src="/js/discordstatus.js"></script>
+    <script src="/js/indexautoscroll.js"></script>
   </body>
 
 </html>

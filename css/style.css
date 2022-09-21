@@ -115,6 +115,7 @@ li {
   padding: none;
   margin: none;
   border: none;
+  position: sticky;
 }
 
 body {

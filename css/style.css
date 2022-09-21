@@ -115,6 +115,7 @@ li {
   padding: none;
   margin: none;
   border: none;
+  position: sticky;
 }
 
 body {
@@ -131,8 +132,9 @@ body {
   padding: none;
   margin: none;
   position: relative;
-  background: rgb(205,165,219);
-  background: linear-gradient(90deg, rgba(205,165,219,1) 18%, rgba(102,109,156,1) 100%);
+  
+  /*background: rgb(205,165,219);
+  background: linear-gradient(90deg, rgba(205,165,219,1) 18%, rgba(102,109,156,1) 100%);*/
 }
 
 .bg1 {
@@ -438,6 +440,14 @@ html {
   bottom: 0px;
   width: 100%;
   text-align: center;
+
+}
+
+#indexscrollingsection {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-top: 2px solid rgba(77, 35, 244, 0.4);
+  border-radius: 1.5vw;
 
 }
 

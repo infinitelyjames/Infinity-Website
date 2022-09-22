@@ -51,6 +51,10 @@
         font-size: 3vw; 
         text-align: center;
     }
+    .indexpagecenterwrapper {
+        width: 90%;
+        max-width: 95%;
+    }
     .centercontainer {
         flex-direction: column;
         border-radius: 4vw;
@@ -87,13 +91,10 @@
         font-size: 4vw;
     }
     .righttextwrapper {
-        margin-top: 18vh;
+        
         height: auto;
     }
     .centeredwithin {
         height: auto;
-    }
-    .lefticonimage {
-        margin-top: 10vh;
     }
   }

@@ -27,6 +27,10 @@
   margin: 0;
 }
 
+.revealhidden {
+  visibility: hidden;
+}
+
 body {
   position: relative;
   top: 0;

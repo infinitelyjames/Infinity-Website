@@ -3,9 +3,11 @@ const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.remove("revealhidden");
+            entry.target.classList.add("revealshown");
         }
         else {
             entry.target.classList.add("revealhidden");
+            entry.target.classList.remove("revealshown");
         }
     });
 });

@@ -27,9 +27,7 @@
   margin: 0;
 }
 
-.revealhidden {
-  visibility: hidden;
-}
+
 
 body {
   position: relative;
@@ -223,17 +221,48 @@ html {
   transform: translate(-50%, -50%); /* relative to element's height & width */
   
   padding: 0.5vw;
-  border-radius: 1vw;
-  display: flex;
-  align-items: center;
-  /*background: red;
-  border: 10px solid blue; -- uncomment for dev purposes*/
-  width: 80%;
   margin: 1vw;
-  max-width: 100%;
+  border-radius: 1vw;
+  
+}
+
+.innerindexpagecenter {
+  display: flex;
+  align-items: center;  
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
+}
+
+.reveal {
+  overflow: hidden;
+  transition: all ease 1.5s;
+  width: 80%;
+  
+}
+
+/*.reveal:on-hover {
+  width: 80%;
+  max-width: 100%;
+  
+}
+*/
+.revealshown {
+  animation: fadeIn 2.5s;
+}
+
+
+
+/* Reveal from the right */
+.revealhiddenright {
+  left: 100vw; 
+  visibility: hidden;
+}
+
+/* Revealed from the right */
+.revealhiddenleft {
+  right: 100vw; 
+  visibility: hidden;
 }
 
 .inlineelement {
@@ -307,7 +336,6 @@ html {
 #discordstatusdetails {
   display: flex;
   padding: 0.5vw;
-  
 }
 
 #profiletext {

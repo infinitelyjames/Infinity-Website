@@ -55,6 +55,9 @@
         width: 90%;
         max-width: 95%;
     }
+    .reveal {
+        width: 95%;
+    }
     .centercontainer {
         flex-direction: column;
         border-radius: 4vw;

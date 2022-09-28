@@ -47,7 +47,7 @@ h1 {
 
 h2 {
   font-family: Comfortaa;
-  font-size: 25px;
+  font-size: 2vw;
   color: #ffffff;
 }
 
@@ -166,6 +166,14 @@ body {
 
 .pagelogo {
   border-radius: 3vw;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
 }
 
 .hidealloverflow {
@@ -607,6 +615,128 @@ html {
   width:  70%;
 }
 
+.discordMenu {
+  
+  margin-left: auto;
+  margin-right: auto;
+  position: fixed;
+  background-color: rgba(18, 18, 30, 0.9);
+  width: fit-content;
+  padding: 1vw;
+  border-radius: 1vw;
+  min-width: 30vw;
+  width: 50%;
+}
+
+.discordMenuContents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+#closeDiscordModal {
+  position: absolute;
+  right: 1vw;
+  top: 0;
+  font-size: 3vw;
+  color: #d2d2d2;
+}
+
+#discordservercontainer {
+  background-color: rgba(74, 74, 74, 0.2);
+  border-radius: 1vw;
+  padding: 1vw;
+  overflow: hidden;
+  max-width: 94%;
+  width: 94%;
+}
+
+.discordserverpfp {
+  max-height: 20vh;
+  border-radius: 2.5vw;
+}
+
+.prevserverbtnwrapper {
+  position: absolute;
+  top: 60%;
+  left: 5%;
+}
+
+
+.slideshowbutton {
+  padding: 1vw;
+  border-radius: 0.5vw;
+  background-color: rgba(71, 104, 168, 0.5);
+}
+
+.nextserverbtnwrapper {
+  position: absolute;
+  right: 5%;
+  top: 60%;
+}
+
+#discordpopuppfp {
+  
+  width: 20%;
+  height: 100%;
+  display: inline;
+  border-radius: 0.2vw;
+  left: 0;
+
+}
+
+.centeredhorizontal {
+  left: 50%; /* relative to nearest positioned ancestor or body element */
+  transform: translate(-50%, 0); /* relative to element's height & width */
+  text-align: center;
+  align-items: center;
+}
+
+.centered {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  align-items: center;
+
+}
+
+.discordname {
+  
+  
+  margin: none;
+  border-radius: 0.5vw;
+  display: inline-block;
+  max-width: 100%;
+  font-size: 3vw;
+  text-align: center;
+  line-height: 0;
+
+}
+
+.discordnamewrapper {
+  max-width: fit-content;
+  width: 70%;
+  max-height: 100%;
+  background-color: rgba(74, 74, 74, 0.25);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: none;
+  padding-right: 0.5vw;
+  border-radius: 1.5vw;
+  gap: 5px;
+  overflow: hidden;
+}
+
+
+
+.discordname {
+  padding: 4px;
+}
+
 .styled-link {
   color: #ffffff;
   text-decoration: none;
@@ -658,6 +788,7 @@ html {
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
+  border-radius: 1.2vw;
 }
 
 /* The Close Button */

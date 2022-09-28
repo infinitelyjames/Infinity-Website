@@ -89,8 +89,8 @@
                 <div class="socials">
 
                     <div class="socialboxwrapper">
-                        <div class="socialbox">
-                            <a href="https://discord.gg/nacfvPB" target="_blank" class="styled-link"><img src="images/discord.png" alt="Discord" class="socialicon"> <span class="socialtext">Discord</span></a>
+                        <div class="socialbox" id="discordBtn">
+                            <a href="javascript:void(0);" class="styled-link"><img src="images/discord.png" alt="Discord" class="socialicon"> <span class="socialtext">Discord</span></a>
                         </div>
                     </div>
                     
@@ -137,6 +137,41 @@
                     <p>This website is managed and maintained by <a href="javascript:void(0);" class="styled-link">Infinity.</a> <br>Thanks to <a href="https://ginger-ninja.uk/" class="styled-link" target="_blank">Diacius</a> for helping.<br> 
                     This site uses <a href="https://github.com/VincentGarreau/particles.js" target="_blank" class="styled-link">particles.js from GitHub</a>.</p>
                     <p style="padding-top: 1vh;">You can view and fork this website freely on <a href="https://github.com/TrainsRAwesome/Infinity-Website" target="_blank" class="no-link-underline styled-link">GitHub</a>, although please comply with the license details available there.</p>
+                </div>
+            </div>
+
+            <!-- discord menu -->
+            <div id="discordMenu" class="discordMenu fade-in centered" hidden>
+                <div class="discordMenuContents">
+                    <span id="closeDiscordModal">&times;</span>
+                    <div class="discordnamewrapper">
+                        <img src="https://cdn.discordapp.com/avatars/684835388505849879/a449e54e9222491abe8ccbf17a125335.png?size=1024" id="discordpopuppfp" alt="Profile Picture">
+                        <p class="discordname">Infinity#1056</p>
+                    </div>
+                    
+                    <h2>Featured Servers</h2>
+                    <div id="discordservercontainer">
+                        <div id="server1">
+                            <a href="https://discord.com/invite/nacfvPB" target="_blank">
+                                <img class="discordserverpfp" src="https://cdn.discordapp.com/icons/695186313569107988/d1809d7cfe7040eefddc0a0f4b97ba65.png?size=1024">
+                                <p>My own friendly server covering all of my projects. Just a hub for bug reports, and discussions around programming topics.</p>
+                            </a>
+                        </div>
+                        <div id="server2" hidden>
+                            <a href="https://discord.gg/ZSBQhGn6EJ" target="_blank">
+                                <img class="discordserverpfp" src="https://cdn.discordapp.com/icons/980046035009290270/3d94196df53b259ed146653a95af4c79.png?size=1024">
+                                <p>Some other cool server I help moderate and help people learn to code.</p>
+                            </a>
+                        </div>
+                        
+                        <div class="prevserverbtnwrapper slideshowbutton" onclick="showOtherServer()">
+                            <a class="prevserverbtn">&#10094;</a>
+                        </div>
+                        <div class="nextserverbtnwrapper slideshowbutton" onclick="showOtherServer()">
+                            <a class="nextserverbtn">&#10095;</a>
+                        </div>
+                    </div>
+
                 </div>
             </div>
             
@@ -268,6 +303,7 @@
     <script src="/js/rightclick.js"></script>
     <script src="/js/keyboardshortcuts.js"></script>
     <script src="/js/discordstatus.js"></script>
+    <script src="/js/discordpopup.js"></script>
     <script defer src="js/scrollintoview.js"></script>
   </body>
 

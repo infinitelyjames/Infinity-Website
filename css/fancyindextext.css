@@ -20,27 +20,27 @@
 }
 
 .text-copy:nth-child(1){
-	stroke: #1f0887;
+	stroke: #4f00fa;
 	animation-delay: -1;
 }
 
 .text-copy:nth-child(2){
-	stroke: #1626ba;
+	stroke: #001aff;
 	animation-delay: -2s;
 }
 
 .text-copy:nth-child(3){
-	stroke: #6b00bd;
+	stroke: #6200ff;
 	animation-delay: -3s;
 }
 
 .text-copy:nth-child(4){
-	stroke: #bd00ba;
+	stroke: #8a05ff;
 	animation-delay: -4s;
 }
 
 .text-copy:nth-child(5){
-	stroke: #541dbc;
+	stroke: #5900ff;
 	animation-delay: -5s;
 }
 

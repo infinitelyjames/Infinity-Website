@@ -89,8 +89,8 @@
                 <div class="socials">
 
                     <div class="socialboxwrapper">
-                        <div class="socialbox">
-                            <a href="https://discord.gg/nacfvPB" target="_blank" class="styled-link"><img src="images/discord.png" alt="Discord" class="socialicon"> <span class="socialtext">Discord</span></a>
+                        <div class="socialbox" id="discordBtn">
+                            <a href="javascript:void(0);" class="styled-link"><img src="images/discord.png" alt="Discord" class="socialicon"> <span class="socialtext">Discord</span></a>
                         </div>
                     </div>
                     
@@ -137,6 +137,19 @@
                     <p>This website is managed and maintained by <a href="javascript:void(0);" class="styled-link">Infinity.</a> <br>Thanks to <a href="https://ginger-ninja.uk/" class="styled-link" target="_blank">Diacius</a> for helping.<br> 
                     This site uses <a href="https://github.com/VincentGarreau/particles.js" target="_blank" class="styled-link">particles.js from GitHub</a>.</p>
                     <p style="padding-top: 1vh;">You can view and fork this website freely on <a href="https://github.com/TrainsRAwesome/Infinity-Website" target="_blank" class="no-link-underline styled-link">GitHub</a>, although please comply with the license details available there.</p>
+                </div>
+            </div>
+
+            <!-- discord menu -->
+            <div id="discordMenu" class="discordMenu fade-in centeredwithin" hidden>
+                <div class="discordMenuContents">
+                    <span class="closeDiscord">&times;</span>
+                    <div class="discordnamewrapper">
+                        <p class="discordname">Infinity#1056</p>
+                    </div>
+                    
+                    <h2>Featured Servers</h2>
+                    <a href="https://discord.gg/8Z7Y4Z" target="_blank" class="styled-link">Join our Discord server</a>
                 </div>
             </div>
             
@@ -268,6 +281,7 @@
     <script src="/js/rightclick.js"></script>
     <script src="/js/keyboardshortcuts.js"></script>
     <script src="/js/discordstatus.js"></script>
+    <script src="/js/discordpopup.js"></script>
     <script defer src="js/scrollintoview.js"></script>
   </body>
 

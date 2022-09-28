@@ -2,6 +2,12 @@
     *{
         font-size: 4vw;
     }
+    h2 {
+        font-size: 4vw;
+    }
+    p {
+        font-size: 2vw;
+    }
     .socialicon {
         max-height: 3vw;
         break-after: always;

@@ -532,8 +532,10 @@ html {
   box-shadow: rgba(100, 100, 111, 1) 0px 7px 29px 0px;
 }
 
+
+
 .socialicon {
-  max-height: 1vw;
+  max-height: 2vw;
 }
 
 .indexnav {

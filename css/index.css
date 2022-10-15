@@ -1,6 +1,51 @@
-.bottomnavbar {
+#bottomnavbar {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    align-items: stretch;
+    width: 99.5vw; /* This value should be 100vw - width of scrollbar*/
+    margin-bottom: 0.5vh;
   }
   
+.bottomnavboxwrapper {
+  width: 100%;
+  text-align: center;
+  max-width: 100%;
+  margin: 0;
+  padding-bottom: 0.3vh;
+  /*background-color: red;*/
+  display: flex;
+}
+
+.bottomnavbox {
+  bottom: 0;
+  border: 1px solid rgba(232, 232, 245, 0.425);
+  background-color: rgba(32, 46, 245, 0.3);
+  opacity: 0.75;
+  font-family: Comfortaa;
+  font-size: 1.2vw;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 0.8vw;
+  border-radius: 1.4vw;
+  margin: 0px 0.5vw 0px 0.5vw;
+  box-shadow: rgba(100, 100, 111, 1) 0px 7px 29px 0px;
+}
+
+.rightbottomnavbox {
+  justify-content: right;
+  right: 0px;
+}
+
+.leftbottomnavbox {
+  justify-content: left;
+  left: 0px;
+  
+}
+
+.bottomsocialtext {
+  padding-top: 0.5vw;
+}
+
+.socialiconlarge {
+  max-height: 4vw;
+}

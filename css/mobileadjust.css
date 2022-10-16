@@ -8,11 +8,7 @@
     p {
         font-size: 2vw;
     }
-    .socialicon {
-        max-height: 3vw;
-        break-after: always;
-
-    }
+    
     .indexheadline {
         font-size: 10vw;
         max-width: 98vw;
@@ -69,19 +65,7 @@
         border-radius: 4vw;
         align-items: center;
     }
-    .socialbox {
-        padding-top: 0.5vh;
-        width: 90%;
-        border-radius: 2vw;
-        max-width: 16.5vw;
-    }
-    .socialtext:before {
-        content: "\A";
-        white-space: pre-line;
-    }
-    .socialtext {
-        font-size: 2.5vw;
-    }
+
     .socialboxwrapper {
         padding-bottom: 1vh;
     }

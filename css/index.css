@@ -47,7 +47,9 @@
 }
 
 .socialiconlarge {
-  max-height: 4vw;
+  
+  max-width: 6vw;
+  height: auto;
 }
 
 .socials {

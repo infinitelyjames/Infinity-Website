@@ -49,3 +49,29 @@
 .socialiconlarge {
   max-height: 4vw;
 }
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 0.7vh;
+}
+
+#contactwrapper {
+  flex-direction: column;
+}
+
+.contactssocialtext {
+  font-size: 3.4vw;
+  padding-top: 0.5vw;
+  
+}
+
+
+
+#contactwrapper {
+  width: 100%;
+  min-width: 200px;
+  max-width: 100vw;
+  /*background-color: blue;*/
+}

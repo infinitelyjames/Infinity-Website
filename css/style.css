@@ -518,24 +518,27 @@ html {
 .socialbox {
   position: sticky;
   bottom: 0;
-  /*border: 1px solid #ffffff;*/
-  background-color: #202ef5;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: rgba(85, 85, 85, 0.3);
   opacity: 0.75;
   font-family: Comfortaa;
   font-size: 1.2vw;
   color: #ffffff;
-  display: inline-block;
-  padding: 0.5vw;
+  
+  padding: 1vw;
   margin-bottom: 0px;
   border-radius: 0.9vw;
   margin: 0px 0.05vw 0px 0.05vw;
   box-shadow: rgba(100, 100, 111, 1) 0px 7px 29px 0px;
+  width: 30vw;
+  min-width: 200px;
+  max-width: 90vw;
 }
 
 
 
 .socialicon {
-  max-height: 2vw;
+  max-height: 3vw;
 }
 
 .indexnav {
@@ -870,17 +873,10 @@ th {
 }
 
 .socialboxwrapper {
-  width: 100%;
+
   text-align: center;
-  max-width: 100%;
   margin: 0;
   padding-bottom: 0.3vh;
-}
-
-.socials {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
 }
 
 .backbtnwrapper {

@@ -25,7 +25,7 @@
   color: #ffffff;
   display: flex;
   flex-direction: column;
-  padding: 0.8vw;
+  padding: 0.7vw;
   border-radius: 1.4vw;
   margin: 0px 0.5vw 0px 0.5vw;
   box-shadow: rgba(100, 100, 111, 1) 0px 7px 29px 0px;
@@ -44,11 +44,12 @@
 
 .bottomsocialtext {
   padding-top: 0.5vw;
+  font-size: 1vw;
 }
 
 .socialiconlarge {
   
-  max-width: 6vw;
+  max-width: 4vw;
   height: auto;
 }
 

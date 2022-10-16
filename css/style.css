@@ -624,7 +624,8 @@ html {
   
   margin-left: auto;
   margin-right: auto;
-  position: fixed;
+  margin-top: 20vh;
+  position: sticky;
   background-color: rgba(18, 18, 30, 0.9);
   width: fit-content;
   padding: 1vw;

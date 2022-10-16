@@ -13,6 +13,7 @@
         <link href="/css/fancyindextext.css" rel="stylesheet" type="text/css" />
         <link href="/css/mobileadjust.css" rel="stylesheet" type="text/css" />
         <link href="/css/discordcolors.css" rel="stylesheet" type="text/css" />
+        <link href="/css/index.css" rel="stylesheet" type="text/css" />
         <!--<link href="navbar.css" rel="stylesheet" type="text/css" /> not needed on this page any more-->
         <meta name='description' content="Infinity is a developer, currently working on numerous python programming projects, including Discord Bots, Image Recognition, Apps & more. Currently developing in Python, and a bit in C++ and web development. Discord bots include Unavailable for Comment, as well as archived music bots. Uses of image recognition involve building recaptcha solvers (those I'm not a robot things), etc.">
         <script src="/js/load_offline.js"></script>
@@ -86,97 +87,24 @@
                     </svg>
                 </div>
 
-                <div class="socials">
-
-                    <div class="socialboxwrapper">
-                        <div class="socialbox" id="discordBtn">
-                            <a href="javascript:void(0);" class="styled-link"><img src="images/discord.png" alt="Discord" class="socialicon"> <span class="socialtext">Discord</span></a>
-                        </div>
+                <div id="bottomnavbar">
+                    <div class="bottomnavboxwrapper leftbottomnavbox">
+                        <a href="#socials" class="styled-link">
+                            <div class="bottomnavbox">
+                                <img src="images/socials.png" alt="Email" class="socialiconlarge"> <span class="socialtext bottomsocialtext">Socials</span>
+                            </div>
+                        </a>
                     </div>
-                    
-                    <div class="socialboxwrapper">
-                        <div class="socialbox">
-                            <a href="https://www.snapchat.com/add/infinitelydev" target="_blank" class="styled-link"><img src="images/snapchat_ghostlogo.png" alt="Snapchat" class="socialicon"> <span class="socialtext">Snapchat</span></a>
-                        </div>
+                    <div class="bottomnavboxwrapper rightbottomnavbox">
+                        <a href="https://github.com/TrainsRAwesome/Infinity-Website" target="_blank" class="styled-link">
+                            <div class="bottomnavbox">
+                                <img src="images/github.png" alt="GitHub" class="socialiconlarge"> <span class="socialtext bottomsocialtext">GitHub</span>
+                            </div>
+                        </a>
                     </div>
-
-                    <div class="socialboxwrapper">
-                        <div class="socialbox">
-                            <a href="https://www.instagram.com/infinitelyjames/" target="_blank" class="styled-link"><img src="images/instagram.png" alt="Instagram" class="socialicon"> <span class="socialtext">Instagram</span></a>
-                        </div>
-                    </div>
-                    
-                    <div class="socialboxwrapper">
-                        <div class="socialbox">
-                            <a href="https://github.com/TrainsRAwesome/Infinity-Website" target="_blank" class="styled-link"><img src="images/github.png" alt="GitHub" class="socialicon"> <span class="socialtext">GitHub</span></a>
-                        </div>
-                    </div>
-                    
-                    <div class="socialboxwrapper">
-                        <div class="socialbox">
-                            <a href="mailto:support@infinitydev.org.uk" target="_blank" class="styled-link"><img src="images/email.png" alt="Email" class="socialicon"> <span class="socialtext">Email</span></a>
-                        </div>
-                    </div>
-                    
-                    <div class="socialboxwrapper">
-                        <div class="socialbox" id="creditsBtn">
-                            <a href="javascript:void(0);" class="styled-link"><img src="images/copyright.png" alt="Copyright" class="socialicon"> <span class="socialtext">Credits</span></a>
-                        </div>
-                    </div>
-
                 </div>
                 
             </div>
-
-            <!-- Popups and modal content below-->
-
-            <!-- Popup for the credits -->
-            <div id="creditsMenu" class="creditsMenu fade-in" hidden>
-                <div class="creditsMenuContents">
-                    <span class="closeCredits">&times;</span>
-                    <p>This website is managed and maintained by <a href="javascript:void(0);" class="styled-link">Infinity.</a> <br>Thanks to <a href="https://ginger-ninja.uk/" class="styled-link" target="_blank">Diacius</a> for helping.<br> 
-                    This site uses <a href="https://github.com/VincentGarreau/particles.js" target="_blank" class="styled-link">particles.js from GitHub</a>.</p>
-                    <p style="padding-top: 1vh;">You can view and fork this website freely on <a href="https://github.com/TrainsRAwesome/Infinity-Website" target="_blank" class="no-link-underline styled-link">GitHub</a>, although please comply with the license details available there.</p>
-                </div>
-            </div>
-
-            <!-- discord menu -->
-            <div id="discordMenu" class="discordMenu fade-in centered" hidden>
-                <div class="discordMenuContents">
-                    <span id="closeDiscordModal">&times;</span>
-                    <div class="discordnamewrapper">
-                        <img src="https://cdn.discordapp.com/avatars/684835388505849879/a449e54e9222491abe8ccbf17a125335.png?size=1024" id="discordpopuppfp" alt="Profile Picture">
-                        <p class="discordname">Infinity#1056</p>
-                    </div>
-                    
-                    <h2>Featured Servers</h2>
-                    <div id="discordservercontainer">
-                        <div id="server1">
-                            <a href="https://discord.com/invite/nacfvPB" target="_blank">
-                                <img class="discordserverpfp" src="https://cdn.discordapp.com/icons/695186313569107988/d1809d7cfe7040eefddc0a0f4b97ba65.png?size=1024">
-                                <p>My own friendly server covering all of my projects. Just a hub for bug reports, and discussions around programming topics.</p>
-                            </a>
-                        </div>
-                        <div id="server2" hidden>
-                            <a href="https://discord.gg/ZSBQhGn6EJ" target="_blank">
-                                <img class="discordserverpfp" src="https://cdn.discordapp.com/icons/980046035009290270/3d94196df53b259ed146653a95af4c79.png?size=1024">
-                                <p>Some other cool server I help moderate and help people learn to code.</p>
-                            </a>
-                        </div>
-                        
-                        <div class="prevserverbtnwrapper slideshowbutton" onclick="showOtherServer()">
-                            <a class="prevserverbtn">&#10094;</a>
-                        </div>
-                        <div class="nextserverbtnwrapper slideshowbutton" onclick="showOtherServer()">
-                            <a class="nextserverbtn">&#10095;</a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            
-            <script defer src="/js/indexbio.js"></script>
-            <script src="/js/indexcredits.js"></script>
             <!-- particles -->
             <script src="./particlesjs/particles.js"></script>
             <script src="./particlesjs/js/app.js"></script>
@@ -293,6 +221,99 @@
                 </svg>
             </div>-->
         </div>
+
+        <!-- Contact / socials -->
+        <div class="fullpage" id="socials">
+            <div class="indexpagecenterwrapper reveal revealhiddenright">
+                <div class="innerindexpagecenter" id="contactwrapper">
+                    <h1>Socials</h1>
+                    <div class="socials">
+                        <div class="socialboxwrapper">
+                            <div class="socialbox" id="discordBtn">
+                                <a href="javascript:void(0);" class="styled-link"><img src="images/discord.png" alt="Discord" class="socialicon"> <span class="contactssocialtext">Discord</span></a>
+                            </div>
+                        </div>
+                        
+                        <div class="socialboxwrapper">
+                            <div class="socialbox">
+                                <a href="https://www.snapchat.com/add/infinitelydev" target="_blank" class="styled-link"><img src="images/snapchat_ghostlogo.png" alt="Snapchat" class="socialicon"> <span class="contactssocialtext">Snapchat</span></a>
+                            </div>
+                        </div>
+    
+                        <div class="socialboxwrapper">
+                            <div class="socialbox">
+                                <a href="https://www.instagram.com/infinitelyjames/" target="_blank" class="styled-link"><img src="images/instagram.png" alt="Instagram" class="socialicon"> <span class="contactssocialtext">Instagram</span></a>
+                            </div>
+                        </div>
+                        
+                        <div class="socialboxwrapper">
+                            <div class="socialbox">
+                                <a href="https://github.com/TrainsRAwesome/Infinity-Website" target="_blank" class="styled-link"><img src="images/github.png" alt="GitHub" class="socialicon"> <span class="contactssocialtext">GitHub</span></a>
+                            </div>
+                        </div>
+                        
+                        <div class="socialboxwrapper">
+                            <div class="socialbox">
+                                <a href="mailto:support@infinitydev.org.uk" target="_blank" class="styled-link"><img src="images/email.png" alt="Email" class="socialicon"> <span class="contactssocialtext">Email</span></a>
+                            </div>
+                        </div>
+                        
+                        <div class="socialboxwrapper">
+                            <div class="socialbox" id="creditsBtn">
+                                <a href="javascript:void(0);" class="styled-link"><img src="images/copyright.png" alt="Copyright" class="socialicon"> <span class="contactssocialtext">Credits</span></a>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+            <!-- Popups and modal content below-->
+
+            <!-- Popup for the credits -->
+            <div id="creditsMenu" class="creditsMenu fade-in" hidden>
+                <div class="creditsMenuContents">
+                    <span class="closeCredits">&times;</span>
+                    <p>This website is managed and maintained by <a href="javascript:void(0);" class="styled-link">Infinity.</a> <br>Thanks to <a href="https://ginger-ninja.uk/" class="styled-link" target="_blank">Diacius</a> for helping.<br> 
+                    This site uses <a href="https://github.com/VincentGarreau/particles.js" target="_blank" class="styled-link">particles.js from GitHub</a>.</p>
+                    <p style="padding-top: 1vh;">You can view and fork this website freely on <a href="https://github.com/TrainsRAwesome/Infinity-Website" target="_blank" class="no-link-underline styled-link">GitHub</a>, although please comply with the license details available there.</p>
+                </div>
+            </div>
+
+            <!-- discord menu -->
+            <div id="discordMenu" class="discordMenu fade-in" hidden>
+                <div class="discordMenuContents">
+                    <span id="closeDiscordModal">&times;</span>
+                    <div class="discordnamewrapper">
+                        <img src="https://cdn.discordapp.com/avatars/684835388505849879/e0b3367afed6bf181b440589781004e3.png?size=1024" id="discordpopuppfp" alt="Profile Picture">
+                        <p class="discordname">Infinity#1056</p>
+                    </div>
+                    
+                    <h2>Featured Servers</h2>
+                    <div id="discordservercontainer">
+                        <div id="server1">
+                            <a href="https://discord.com/invite/nacfvPB" target="_blank">
+                                <img class="discordserverpfp" src="https://cdn.discordapp.com/icons/695186313569107988/d1809d7cfe7040eefddc0a0f4b97ba65.png?size=1024">
+                                <p>My own friendly server covering all of my projects. Just a hub for bug reports, and discussions around programming topics.</p>
+                            </a>
+                        </div>
+                        <div id="server2" hidden>
+                            <a href="https://discord.gg/skUenYWtmJ" target="_blank">
+                                <img class="discordserverpfp" src="https://cdn.discordapp.com/icons/942048798010662953/2f1fcfd695e3be0507cffb9e8c54eeed.png?size=1024">
+                                <p>Some other cool server I help moderate, chill and help people learn to code.</p>
+                            </a>
+                        </div>
+                        
+                        <div class="prevserverbtnwrapper slideshowbutton" onclick="showOtherServer()">
+                            <a class="prevserverbtn">&#10094;</a>
+                        </div>
+                        <div class="nextserverbtnwrapper slideshowbutton" onclick="showOtherServer()">
+                            <a class="nextserverbtn">&#10095;</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Right-click menu -->
@@ -300,6 +321,8 @@
         <p class="menutext"><a class="styled-link" href="javascript:void(0);" id="copybtn">Copy</a></p>
         <p class="menutext"><a class="styled-link" href="https://github.com/TrainsRAwesome/Infinity-Website" target="_blank">Source code</a></p>
     </div>
+    <script defer src="/js/indexbio.js"></script>
+    <script src="/js/indexcredits.js"></script>
     <script src="/js/rightclick.js"></script>
     <script src="/js/keyboardshortcuts.js"></script>
     <script src="/js/discordstatus.js"></script>

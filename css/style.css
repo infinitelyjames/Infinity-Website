@@ -518,22 +518,27 @@ html {
 .socialbox {
   position: sticky;
   bottom: 0;
-  /*border: 1px solid #ffffff;*/
-  background-color: #202ef5;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: rgba(85, 85, 85, 0.3);
   opacity: 0.75;
   font-family: Comfortaa;
   font-size: 1.2vw;
   color: #ffffff;
-  display: inline-block;
-  padding: 0.5vw;
+  
+  padding: 1vw;
   margin-bottom: 0px;
   border-radius: 0.9vw;
   margin: 0px 0.05vw 0px 0.05vw;
   box-shadow: rgba(100, 100, 111, 1) 0px 7px 29px 0px;
+  width: 20vw;
+  min-width: 200px;
+  max-width: 90vw;
 }
 
+
+
 .socialicon {
-  max-height: 1vw;
+  max-height: 2vw;
 }
 
 .indexnav {
@@ -619,7 +624,8 @@ html {
   
   margin-left: auto;
   margin-right: auto;
-  position: fixed;
+  margin-top: 20vh;
+  position: sticky;
   background-color: rgba(18, 18, 30, 0.9);
   width: fit-content;
   padding: 1vw;
@@ -770,14 +776,13 @@ html {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
+
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 30vh; /* Location of the box */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
 /* Modal Content */
@@ -787,7 +792,7 @@ html {
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
+  width: 80vw;
   border-radius: 1.2vw;
 }
 
@@ -868,17 +873,10 @@ th {
 }
 
 .socialboxwrapper {
-  width: 100%;
+
   text-align: center;
-  max-width: 100%;
   margin: 0;
   padding-bottom: 0.3vh;
-}
-
-.socials {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
 }
 
 .backbtnwrapper {

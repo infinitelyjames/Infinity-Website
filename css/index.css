@@ -1,6 +1,6 @@
 #bottomnavbar {
     display: flex;
-    align-items: stretch;
+    align-items: flex-end;
     width: 99.5vw; /* This value should be 100vw - width of scrollbar*/
     margin-bottom: 0.5vh;
   }

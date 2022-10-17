@@ -864,6 +864,7 @@ th {
   width: 100vw;
   max-height: 27vh;
   color: transparent;
+  z-index: 0;
 }
 
 #indexsvgwaves {

@@ -18,7 +18,7 @@
 .bottomnavbox {
   bottom: 0;
   border: 1px solid rgba(232, 232, 245, 0.425);
-  background-color: rgba(32, 46, 245, 0.3);
+  background-color: rgba(32, 46, 245, 1);
   opacity: 0.75;
   font-family: Comfortaa;
   font-size: 1.2vw;
@@ -29,6 +29,7 @@
   border-radius: 1.4vw;
   margin: 0px 0.5vw 0px 0.5vw;
   box-shadow: rgba(100, 100, 111, 1) 0px 7px 29px 0px;
+  z-index: 2;
 }
 
 .rightbottomnavbox {

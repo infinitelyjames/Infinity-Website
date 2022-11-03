@@ -80,3 +80,38 @@
   max-width: 100vw;
   /*background-color: blue;*/
 }
+
+.statuspagecontainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1vw;
+}
+
+.branding {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(219, 219, 219, 0.178);
+  border-radius: 0.5vw;
+  padding: 0.5vw 0.7vw;
+  cursor: pointer;
+}
+
+.brandingicon {
+  width: 1.7vw;
+  height: auto;
+  margin: 0;
+}
+
+.brandingtext {
+  font: 1.5vmax "Comfortaa", Arial, sans-serif;
+  font-weight: 300;
+  line-height: 100%;
+  text-decoration: none;
+  color: white;
+  margin: 0;
+  margin-left: 0.5vw;
+  padding: 0;
+}

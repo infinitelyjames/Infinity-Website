@@ -199,7 +199,7 @@ html {
 }
 
 .indexbg {
-  background-image: url('/images/codebg2.png');
+  background-image: url('/images/snowy_mountains.jpeg'); /* rl('/images/codebg2.png')*/
   background-size: cover;
 }
 
@@ -212,13 +212,16 @@ html {
   left: 50%; /* relative to nearest positioned ancestor or body element */
   top: 50%; /*  relative to nearest positioned ancestor or body element */
   transform: translate(-50%, -50%); /* relative to element's height & width */
-  background: linear-gradient(30deg, rgba(68, 68, 68, 0.1), rgba(25, 25, 25, 0.4), rgba(91, 90, 90, 0.20));
-  padding: 0.5vw;
+  background: linear-gradient(30deg, rgba(0, 0, 0, 0.85), rgba(15, 15, 15, 0.85), rgba(0, 10, 0, 0.85));
+  box-shadow: rgba(0,0,0, 1) 0px 6px 20px;
+  border: none;
   border-radius: 1vw;
+  padding: 1vmax 2vmax;
   display: flex;
-  width: 80%;
+  min-width: 60%;
+  width: fit-content;
   margin: 1vw;
-  max-width: 100%;
+  max-width: 960%;
   display: flex;
   align-items: center;
   flex-direction: column;

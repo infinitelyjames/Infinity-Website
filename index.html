@@ -26,64 +26,75 @@
         <div id="particles-js" >
             <!-- center page content, profile summary-->
             <div class="centercontainer">
-                <!-- left container section -->
-                <div id="leftsection" class="inlineelement">
-                    <!--<h1 class="nobold indexheadline">Hi, I'm Infinity!</h1>-->
-                    <svg id="indexheadlinesvg">
-                        <symbol id="s-text">
-                            <text text-anchor="middle" x="50%" y="80%" id="indexheadlinetext">Hi, I'm Infinity!</text>
-                        </symbol>
-                    
-                        <g class = "g-ants">
-                            <use xlink:href="#s-text" class="text-copy"></use>
-                            <use xlink:href="#s-text" class="text-copy"></use>
-                            <use xlink:href="#s-text" class="text-copy"></use>
-                            <use xlink:href="#s-text" class="text-copy"></use>
-                            <use xlink:href="#s-text" class="text-copy"></use>
-                        </g>
-                    </svg>
-                    <p class="indexlowertext" id="typewrite"></p>
+                <!-- left container section<div id="leftsection" class="inlineelement"> -->
+                
+                <!--<h1 class="nobold indexheadline">Hi, I'm Infinity!</h1>-->
+                <svg id="indexheadlinesvg">
+                    <symbol id="s-text">
+                        <text text-anchor="middle" x="50%" y="80%" id="indexheadlinetext">Hi, I'm Infinity!</text>
+                    </symbol>
+                
+                    <g class = "g-ants">
+                        <use xlink:href="#s-text" class="text-copy"></use>
+                        <use xlink:href="#s-text" class="text-copy"></use>
+                        <use xlink:href="#s-text" class="text-copy"></use>
+                        <use xlink:href="#s-text" class="text-copy"></use>
+                        <use xlink:href="#s-text" class="text-copy"></use>
+                    </g>
+                </svg>
+                <p class="indexlowertext" id="typewrite"></p>
 
-                    <!-- main website navigator selector thingy -->
-                    <div class="indexnav">
-                        <div class="navbox move-up-on-hover">
-                            <a href="#revisioner" class="no-link-underline navtext">Revisioner ❯</a> <!--./revisioner/-->
-                            <!--<img src="images/revisioner.png" class="navicon" alt="Revisioner">-->
-                        </div>
-                        <div class="navbox move-up-on-hover">
-                            <a href="#discordbots" class="no-link-underline navtext">Discord Bots ❯</a>
-                        </div>
-                        <div class="navbox move-up-on-hover">
-                            <a href="#projects" class="no-link-underline navtext">Projects ❯</a>
+                <!-- main website navigator selector thingy -->
+                <div class="indexnav">
+                    <div class="navbox move-up-on-hover">
+                        <a href="#revisioner" class="no-link-underline navtext">Revisioner ❯</a> <!--./revisioner/-->
+                        <!--<img src="images/revisioner.png" class="navicon" alt="Revisioner">-->
+                    </div>
+                    <div class="navbox move-up-on-hover">
+                        <a href="#discordbots" class="no-link-underline navtext">Discord Bots ❯</a>
+                    </div>
+                    <div class="navbox move-up-on-hover">
+                        <a href="#projects" class="no-link-underline navtext">Projects ❯</a>
+                    </div>
+                    <div class="navbox move-up-on-hover">
+                        <a href="#socials" class="no-link-underline navtext">Socials ❯</a>
+                    </div>
+                    <div class="navbox move-up-on-hover">
+                        <a href="https://status.infinitydev.org.uk" target="_blank" class="no-link-underline navtext">Statuspage ❯</a>
+                    </div>
+                    <div class="navbox move-up-on-hover">
+                        <a href="https://github.com/TrainsRAwesome" target="_blank" class="no-link-underline navtext">GitHub ❯</a>
+                    </div>
+                    
+                </div>
+
+                <!-- right container section
+                <div id="rightsection" class="inlineelement">
+                    <img src="https://cdn.discordapp.com/avatars/684835388505849879/e0b3367afed6bf181b440589781004e3.png?size=1024" class="profilepiclarge" alt="Profile Picture">
+                </div>-->
+                
+            </div>
+
+            <div id="discordprofilewrapper">
+                <div id="rainbowwrapper">
+                    <div id="discordwrapper">
+                        <img src="https://cdn.discordapp.com/avatars/684835388505849879/e0b3367afed6bf181b440589781004e3.png?size=1024" class="profilepic" alt="Profile Picture">
+                        <div id="discordstatusdetails">
+                            <p id="profiletext">Loading...</p>
                         </div>
                         
                     </div>
                 </div>
-
-                <!-- right container section-->
-                <div id="rightsection" class="inlineelement">
-                    <p id="discordactivitysubheading">Discord Activity</p>
-                    <div id="rainbowwrapper">
-                        <div id="discordwrapper">
-                            <img src="https://cdn.discordapp.com/avatars/684835388505849879/e0b3367afed6bf181b440589781004e3.png?size=1024" class="profilepic" alt="Profile Picture">
-                            <div id="discordstatusdetails">
-                                <p id="profiletext">Loading...</p>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    
-                </div>
-                
             </div>
+            
 
             <!-- statuspage link -->
-            <div class="statuspagecontainer">
+            <!--<div class="statuspagecontainer">
                 <div class="branding" onclick="window.location.replace('https:\/\/status.infinitydev.org.uk')">
                     <img src="https://infinitydev.org.uk/images/icon_image.png" alt="Infinity Development" class="brandingicon"/>
                     <p class="brandingtext">Statuspage</p>
                 </div>
-            </div>
+            </div>-->
 
             <!--footer and stuff I guess-->
             <div class="footer">
@@ -95,7 +106,7 @@
                     </svg>
                 </div>
 
-                <div id="bottomnavbar">
+                <!--<div id="bottomnavbar">
                     <div class="bottomnavboxwrapper leftbottomnavbox">
                         <a href="#socials" class="styled-link">
                             <div class="bottomnavbox">
@@ -110,7 +121,7 @@
                             </div>
                         </a>
                     </div>
-                </div>
+                </div>-->
                 
             </div>
             <!-- particles -->

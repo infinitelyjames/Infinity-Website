@@ -81,18 +81,18 @@ li {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: #000000; 
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888; 
+  background: rgba(91, 47, 250, 0.9); 
   border-radius: 0.2vw;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #888; 
+  background: rgba(91, 47, 250, 0.9); 
 }
 
 .homepage {
@@ -219,7 +219,9 @@ html {
   width: 80%;
   margin: 1vw;
   max-width: 100%;
+  display: flex;
   align-items: center;
+  flex-direction: column;
 }
 
 .indexpagecenterwrapper {
@@ -543,6 +545,11 @@ html {
 
 .indexnav {
   padding-top: 0.5vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1vmax;
+  justify-content: center;
 }
 
 .navbox {
@@ -555,14 +562,15 @@ html {
   margin-bottom: 0px;
   border-radius: 0.8vw;
   margin: 0px 0.05vw 0px 0.05vw;
-  box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
+  box-shadow: rgba(110, 92, 247, 0.7) 1px 3px 9px;
+  transition: ease-in-out 0.2s;
 }
 
-/*
+
 .navbox:hover {
-  box-shadow: 10px 10px rgba(0,0,0,0.8); rgba(0,0,0,0.4);*
+  box-shadow: rgba(110, 92, 247, 0.9) 1px 4px 12px;
 }
-*/
+
 
 .navtext {
   color: #6e5cf7;

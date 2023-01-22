@@ -217,13 +217,12 @@ html {
   background: linear-gradient(30deg, rgba(0, 0, 0, 0.80), rgba(15, 15, 15, 0.80), rgba(0, 10, 0, 0.80));
   box-shadow: rgba(0,0,0, 1) 0px 6px 20px;
   border: none;
-  border-radius: 1vw;
+  border-radius: 2vmax;
   padding: 1vmax 0.5vmax;
   display: flex;
   min-width: 60%;
-  width: fit-content;
-  margin: 1vw;
-  max-width: 100%;
+  width: 60vmax;
+  max-width: 95vw;
   display: flex;
   align-items: center;
   flex-direction: column;

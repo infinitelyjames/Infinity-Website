@@ -1,6 +1,6 @@
 var discordBtn = document.getElementById("discordBtn");
 var discordModal = document.getElementById("discordMenu");
-var discordProfile = document.getElementById("rightsection");
+var discordProfile = document.getElementById("discordprofilewrapper");
 var server1 = document.getElementById("server1");
 var server2 = document.getElementById("server2");
 var hiddenServer = "server2";

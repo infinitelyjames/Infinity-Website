@@ -63,16 +63,19 @@ pre {
   white-space: pre-wrap;
 }
 
-p {
+p, li {
   font-family: Comfortaa;
-  font-size: 1vw;
-  color: #ffffff;
+  font-size: 1vmax;
+  color: rgba(189, 189, 189, 0.945);
 }
 
-li {
-  font-family: Comfortaa;
-  font-size: 20px;
-  color: #ffffff;
+a {
+  font-size: inherit;
+}
+
+ul {
+  margin: 0px;
+  padding-top: 0px;
 }
 
 /* Custom Scrollbar
@@ -236,7 +239,7 @@ html {
   
   padding: 0.5vw;
   margin: 1vw;
-  border-radius: 1vw;
+  border-radius: 1.5vmax;
   
 }
 
@@ -391,12 +394,14 @@ html {
 }
 
 .pageheadline {
-  font-family: Comfortaa;
+  font-family: Lato;
   font-size: 5vw;
   color: #ffffffc5;
   margin-bottom: 0px;
   margin-top: 0px;
   text-align: left;
+  font-weight: 100;
+  line-height: 100%;
 }
 
 .pagetext {
@@ -443,7 +448,7 @@ html {
   padding: 2vh 1vw 2vh 1vw;
   z-index: 2;
   border-radius: 2vw;
-  background-color: rgba(59, 59, 59, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   flex-grow: 0;
 }
 

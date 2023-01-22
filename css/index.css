@@ -132,3 +132,44 @@
   max-width: 100vw;
   z-index: 1;
 }
+
+#closeDiscordModal {
+  cursor: pointer;
+}
+
+.indexfullwrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  min-width: 60vw;
+  max-width: 90vw;
+  height: fit-content;
+  max-height: 100vh;
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.5);
+  gap: 1vmax;
+  padding: 0.5vmax 1.5vmax;
+}
+
+
+#aboutmeleftwrapper {
+  width: 30%;
+  overflow: hidden;
+  max-height: 100%;
+}
+
+#aboutmerightwrapper {
+  width: 70%;
+}
+
+#aboutmeicon {
+  min-width: 100%;
+  max-width: 100%;
+  border-radius: 2vmax;
+}
+
+#aboutmerightwrapper {
+  text-align: left;
+}

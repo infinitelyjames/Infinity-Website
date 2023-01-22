@@ -14,8 +14,8 @@
         max-width: 98vw;
     }
     #indexheadlinetext {
-        font: 10vw'Montserrat';
-        margin: 0 auto;
+        font: 7vw'Montserrat';
+        margin: 0px;
     }
     .indexlowertext {
         font-size: 4vw;
@@ -59,11 +59,6 @@
     }
     .reveal {
         width: 95%;
-    }
-    .centercontainer {
-        flex-direction: column;
-        border-radius: 4vw;
-        align-items: center;
     }
     .profilepiclarge {
         display: none;

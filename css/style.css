@@ -1,3 +1,5 @@
+@import url("https://use.typekit.net/dkj5gbs.css"); 
+
 #particles-js{
   width: 100vw;
   height: 100vh;
@@ -212,16 +214,16 @@ html {
   left: 50%; /* relative to nearest positioned ancestor or body element */
   top: 50%; /*  relative to nearest positioned ancestor or body element */
   transform: translate(-50%, -50%); /* relative to element's height & width */
-  background: linear-gradient(30deg, rgba(0, 0, 0, 0.85), rgba(15, 15, 15, 0.85), rgba(0, 10, 0, 0.85));
+  background: linear-gradient(30deg, rgba(0, 0, 0, 0.80), rgba(15, 15, 15, 0.80), rgba(0, 10, 0, 0.80));
   box-shadow: rgba(0,0,0, 1) 0px 6px 20px;
   border: none;
   border-radius: 1vw;
-  padding: 1vmax 2vmax;
+  padding: 1vmax 0.5vmax;
   display: flex;
   min-width: 60%;
   width: fit-content;
   margin: 1vw;
-  max-width: 960%;
+  max-width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -381,10 +383,12 @@ html {
 }
 
 .indexheadline {
-  font-family: Comfortaa;
-  font-size: 6vw;
+  font-family: Lato;
+  font-size: 6vmax;
   color: #ffffff;
-  margin-bottom: 0px;
+  margin: 0px;
+  font-weight: 100;
+  line-height: 100%;
 }
 
 .pageheadline {
@@ -553,6 +557,7 @@ html {
   flex-wrap: wrap;
   gap: 1vmax;
   justify-content: center;
+  width: fit-content;
 }
 
 .navbox {

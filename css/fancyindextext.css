@@ -2,12 +2,12 @@
 
 #indexheadlinesvg {
     display: block;
-    
-    width: 100%;
+    width: 90%;
+	height: fit-content;
 }
 
 #indexheadlinetext {
-    font: 6.8vw'Montserrat';
+    font: 6.8vmax'Montserrat';
 }
 
 .text-copy {

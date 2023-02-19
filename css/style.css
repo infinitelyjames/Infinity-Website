@@ -204,7 +204,7 @@ html {
 }
 
 .indexbg {
-  background-image: url('/images/snowy_mountains.jpeg'); /* rl('/images/codebg2.png')*/
+  background-image: url('/images/codebg2.png'); /* rl('/images/codebg2.png')  /images/snowy_mountains.jpeg*/
   background-size: cover;
 }
 

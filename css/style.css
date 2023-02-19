@@ -217,7 +217,7 @@ html {
   left: 50%; /* relative to nearest positioned ancestor or body element */
   top: 50%; /*  relative to nearest positioned ancestor or body element */
   transform: translate(-50%, -50%); /* relative to element's height & width */
-  background: linear-gradient(30deg, rgba(0, 0, 0, 0.80), rgba(15, 15, 15, 0.80), rgba(0, 10, 0, 0.80));
+  background: linear-gradient(30deg, rgba(10, 5, 10, 0.80), rgba(10, 10, 10, 0.8), rgba(5, 5, 10, 0.8));
   box-shadow: rgba(0,0,0, 1) 0px 6px 20px;
   border: none;
   border-radius: 2vmax;

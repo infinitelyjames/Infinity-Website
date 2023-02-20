@@ -204,8 +204,10 @@ html {
 }
 
 .indexbg {
-  background-image: url('/images/codebg2.png'); /* rl('/images/codebg2.png')  /images/snowy_mountains.jpeg*/
-  background-size: cover;
+  /*background-color: rgb(3, 3, 3);*/
+  background: linear-gradient(45deg, rgba(5, 5, 5, 0.80), rgba(3, 3, 3, 0.8), rgba(4, 4, 4, 0.8), rgba(7, 7, 7, 0.8));
+  /*background-image: url('/images/codebg2.png');*/ /* rl('/images/codebg2.png')  /images/snowy_mountains.jpeg*/
+  /*background-size: cover;*/
 }
 
 .nobold {
@@ -219,7 +221,7 @@ html {
   transform: translate(-50%, -50%); /* relative to element's height & width */
   background: linear-gradient(30deg, rgba(10, 5, 10, 0.80), rgba(10, 10, 10, 0.8), rgba(5, 5, 10, 0.8));
   box-shadow: rgba(0,0,0, 1) 0px 6px 20px;
-  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.03);
   border-radius: 2vmax;
   padding: 1vmax 0.5vmax;
   display: flex;

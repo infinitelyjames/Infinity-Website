@@ -223,7 +223,6 @@ html {
   box-shadow: rgba(0,0,0, 1) 0px 6px 20px;
   border: 1px solid rgba(255, 255, 255, 0.03);
   /*border-radius: 2vmax;*/
-  padding: 1vmax 0.5vmax;
   display: flex;
   min-width: 60%;
   width: 60vmax;
@@ -233,15 +232,34 @@ html {
   flex-direction: column;
 }
 
-.rotatingborder {
-  --border-size: 1px;
+.rotatingborderouter {
+  --border-size: 0.25vmax;
   --border-angle: 0turn;
-  background-image: linear-gradient(30deg, rgba(10, 5, 10, 0.93), rgba(10, 10, 10, 0.93), rgba(5, 5, 10, 0.93)), conic-gradient(from var(--border-angle), purple, #08f, #f03);
-  background-size: calc(100% - (var(--border-size) * 2)) calc(100% - (var(--border-size) * 2)), cover;
-  background-position: center center;
+  --border-radius: 1.2vmax;
+  background-image: conic-gradient(from var(--border-angle), purple, #08f, #f03);
+  background-size: 100% cover; /* calc(100% - (var(--border-size) * 2))*/
+  background-position: center;
   background-repeat: no-repeat;
   animation: bg-spin 5s linear infinite;
+  border-radius: var(--border-radius);
 }
+
+.rotatingborderinner {
+  --border-size: 0.25vmax;
+  --border-angle: 0turn;
+  --border-radius: 0.9vmax;
+  background-image: linear-gradient(30deg, rgba(10, 5, 10, 0.9), rgba(10, 10, 10, 0.9), rgba(5, 5, 10, 0.9));
+  /*background-size: calc(100% - (var(--border-size) * 2)) calc(100% - (var(--border-size) * 2));*/
+  margin: var(--border-size);
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: var(--border-radius);
+}
+
+.centercontainerinner {
+  padding: 0.8vmax 0.5vmax;
+}
+
 @keyframes bg-spin {
   to {
     --border-angle: 1turn;

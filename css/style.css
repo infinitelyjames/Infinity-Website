@@ -241,6 +241,8 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   animation: bg-spin 5s linear infinite;
+  -moz-animation: bg-spin 5s linear infinite;
+  -webkit-animation: bg-spin 5s linear infinite;
   border-radius: var(--border-radius);
 }
 

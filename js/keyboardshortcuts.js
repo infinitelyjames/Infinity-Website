@@ -22,7 +22,7 @@ if (findGetParameter("devmode")!="on")
             event.preventDefault();
         }
         else if (event.ctrlKey && event.key == 'I' || event.ctrlKey && event.key == 'u') {
-            window.location.replace("https://github.com/TrainsRAwesome/Infinity-Website");
+            window.location.replace("https://github.com/infinitelyjames/Infinity-Website");
             event.preventDefault();
         }
     }

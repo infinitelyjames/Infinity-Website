@@ -127,8 +127,9 @@
   position: fixed;
   bottom: 1vmin;
   right: 1vmin;
-  width: 20vmax;
+  width: fit-content;
   height: auto;
+  max-height: min-content;
   max-width: 100vw;
   z-index: 1;
 }

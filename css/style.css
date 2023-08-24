@@ -448,17 +448,6 @@ html {
   line-height: 100%;
 }
 
-.pageheadline {
-  font-family: Lato;
-  font-size: 5vw;
-  color: #ffffffc5;
-  margin-bottom: 0px;
-  margin-top: 0px;
-  text-align: left;
-  font-weight: 100;
-  line-height: 100%;
-}
-
 .pagetext {
   text-align: left;
   color: #ffffffd2;

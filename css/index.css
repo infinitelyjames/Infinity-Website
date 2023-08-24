@@ -1,3 +1,8 @@
+:root {
+  --index-section-heading-font-size: 5vw;
+}
+
+
 #bottomnavbar {
     display: flex;
     align-items: flex-end;
@@ -167,7 +172,29 @@
 }
 
 #aboutmeicon {
-  min-width: 100%;
-  max-width: 100%;
+  margin: auto;
+  height: var(--index-section-heading-font-size);
+  width: auto;
   border-radius: 2vmax;
+  vertical-align: text-bottom;
+  padding: 0.5vmax;
+}
+
+.indexmainitemlistcontainer {
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  padding: 5vh 10vw ;
+  text-align: left;
+}
+
+.pageheadline {
+  font-family: Lato;
+  font-size: var(--index-section-heading-font-size);
+  color: #ffffffc5;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  text-align: left;
+  font-weight: 100;
+  line-height: 100%;
 }

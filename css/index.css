@@ -144,7 +144,7 @@
   align-items: center;
   justify-content: center;
   width: fit-content;
-  min-width: 60vw;
+  min-width: 70vw;
   max-width: 90vw;
   height: fit-content;
   max-height: 100vh;
@@ -163,14 +163,11 @@
 
 #aboutmerightwrapper {
   width: 70%;
+  text-align: left;
 }
 
 #aboutmeicon {
   min-width: 100%;
   max-width: 100%;
   border-radius: 2vmax;
-}
-
-#aboutmerightwrapper {
-  text-align: left;
 }

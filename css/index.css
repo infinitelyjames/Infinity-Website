@@ -255,7 +255,7 @@
   background-position: center;
   background-repeat: no-repeat;
   border-radius: var(--border-radius);
-  min-width: 50vw;
+  
 }
 
 @keyframes bg-spin {

@@ -231,48 +231,11 @@ html {
   align-items: center;
   flex-direction: column;
 }
-
-.rotatingborderouter {
-  --border-size: 0.25vmax;
-  --border-angle: 0turn;
-  --border-radius: 1.2vmax;
-  background-image: conic-gradient(from var(--border-angle), purple, #08f, #f03);
-  background-size: 100% cover; /* calc(100% - (var(--border-size) * 2))*/
-  background-position: center;
-  background-repeat: no-repeat;
-  animation: bg-spin 5s linear infinite;
-  -moz-animation: bg-spin 5s linear infinite;
-  -webkit-animation: bg-spin 5s linear infinite;
-  border-radius: var(--border-radius);
-}
-
-.rotatingborderinner {
-  --border-size: 0.25vmax;
-  --border-angle: 0turn;
-  --border-radius: 0.9vmax;
-  background-image: linear-gradient(30deg, rgba(10, 5, 10, 0.9), rgba(10, 10, 10, 0.9), rgba(5, 5, 10, 0.9));
-  /*background-size: calc(100% - (var(--border-size) * 2)) calc(100% - (var(--border-size) * 2));*/
-  margin: var(--border-size);
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: var(--border-radius);
-}
-
 .centercontainerinner {
   padding: 0.8vmax 0.5vmax;
 }
 
-@keyframes bg-spin {
-  to {
-    --border-angle: 1turn;
- }
-}
 
-@property --border-angle {
-  syntax: "<angle>";
-  inherits: true;
-  initial-value: 0turn;
-}
 
 .indexpagecenterwrapper {
   position: absolute;
@@ -564,13 +527,6 @@ html {
 
 }
 
-#indexscrollingsection {
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border-top: 2px solid rgba(77, 35, 244, 0.4);
-  border-radius: 1.5vw;
-
-}
 
 .socialbox {
   position: sticky;

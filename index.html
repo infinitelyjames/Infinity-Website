@@ -188,7 +188,7 @@
             <div class="reveal indexdemo" id="firstdemo">
                 <h1>Watch a cool machine learning algorithm solve a captcha</h1>
                 <div class="videocontainer">
-                    <video id="captchavideo" class="indexdemomedia" loop autoplay><source src="demos/captcha.mp4" type="video/mp4"></video>
+                    <video id="captchavideo" class="indexdemomedia" loop autoplay muted><source src="demos/captcha.mp4" type="video/mp4"></video>
                 </div>
                 <p>This algorithm was built in python, to no external design other than what I thought might work. After reading the text at the top of the captcha, the program proceeds to check if it has a dataset for this item yet. If not, it does a quick trawl on the internet, downloading suitable images and training itself.
                     Once it has trained itself, it then finds all the images in the captcha, before using the model to test if the item mentioned in the text is in the image. If this is the case, the program moves the mouse and clicks on the image. All that's left to do is click the verify button.

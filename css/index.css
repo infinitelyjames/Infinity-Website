@@ -179,7 +179,8 @@
   width: auto;
   border-radius: 2vmax;
   vertical-align: text-bottom;
-  padding: 0.5vmax;
+  margin: 0.5vmax;
+  box-shadow: rgba(245, 245, 245, 0.2) 0px 7px 29px 0px;
 }
 
 .indexmainitemlistcontainer {

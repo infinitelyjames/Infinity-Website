@@ -3,6 +3,18 @@
   --index-section-subheading-font-size: 3vw;
   --index-scrolling-section-bg: rgba(110, 92, 247, 0.1);
   --index-blue-red-border-size: 0.25vmax;
+  --link-color: rgb(0, 117, 212);
+  --link-hover-color: rgb(0, 4, 212);
+}
+
+a {
+  color: var(--link-color);
+  transition: ease-in-out 0.2s;
+}
+
+a:hover {
+  color: var(--link-hover-color);
+  
 }
 
 

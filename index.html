@@ -55,21 +55,10 @@
                             <a href="#aboutme" class="no-link-underline navtext">About me ❯</a>
                         </div>
                         <div class="navbox move-up-on-hover">
-                            <a href="#revisioner" class="no-link-underline navtext">Revisioner ❯</a> <!--./revisioner/-->
-                            <!--<img src="images/revisioner.png" class="navicon" alt="Revisioner">-->
-                        </div>
-                        <div class="navbox move-up-on-hover">
-                            <a href="#discordbots" class="no-link-underline navtext">Discord bots ❯</a>
-                        </div>
-                        <div class="navbox move-up-on-hover">
-                            <a href="#projects" class="no-link-underline navtext">Projects ❯</a>
+                            <a href="#firstdemo" class="no-link-underline navtext">Projects ❯</a>
                         </div>
                         <div class="navbox move-up-on-hover">
                             <a href="#socials" class="no-link-underline navtext">Socials ❯</a>
-                        </div>
-                        <div class="navbox move-up-on-hover">
-                            <a href="https://status.infinitydev.org.uk" target="_blank"
-                                class="no-link-underline navtext">Statuspage ❯</a>
                         </div>
                         <div class="navbox move-up-on-hover">
                             <a href="https://github.com/infinitelyjames" target="_blank"
@@ -190,15 +179,68 @@
                 <p>
                     It's a mindset I've had from the very beginning, that nothing is out of reach. I've always been a very curious person, and I've always wanted to know how things work, and how to make them work. So, in the future, after my current projects and other unrelated work, I'm looking to delve deeper into the lower levels of computing, designing my own operating system from scratch. No one said it would be easy, but I'm willing to try.
                 </p>
+                <p>
+                    Scroll down for some demos of my work...
+                </p>
             </div>
         </div>
-        <!-- Revisioner -->
+        <div id="indexdemoslist">
+            <div class="reveal indexdemo" id="firstdemo">
+                <h1>Watch a cool machine learning algorithm solve a captcha</h1>
+                <div class="videocontainer">
+                    <video id="captchavideo" class="indexdemomedia" loop autoplay><source src="demos/captcha.mp4" type="video/mp4"></video>
+                </div>
+                <p>This algorithm was built in python, to no external design other than what I thought might work. After reading the text at the top of the captcha, the program proceeds to check if it has a dataset for this item yet. If not, it does a quick trawl on the internet, downloading suitable images and training itself.
+                    Once it has trained itself, it then finds all the images in the captcha, before using the model to test if the item mentioned in the text is in the image. If this is the case, the program moves the mouse and clicks on the image. All that's left to do is click the verify button.
+                </p>
+            </div>
+            <script src="/js/indexvideoautoplay.js"></script>
+
+            <div class="reveal indexdemo">
+                <h1>This is what the antivirus tester program produces</h1>
+                <image src="/demos/malx.png" class="indexdemomedia"></image>
+                <p>This algorithm was also built in python, and allows for quick and easy antivirus test in a virtual machine. Simply place all your samples in a folder, and the program will run them, testing how long the antivirus takes to detect each malware sample, and terminate it. Don't have your own samples? The program is capable of downloading a sample repository off github, extracting the samples, and executing those instead. 
+                    <br>NB. The image above shows an output of the program while it was being tested. Not all data in the image is correct.</p>
+            </div>
+
+            <div class="reveal indexdemo">
+                <h1>Tired of getting distracted when you should be productive?</h1>
+                <image src="/images/blockpage.png" class="indexdemomedia"></image>
+                <p>How many times have you got fed up because of your poor productivity? Distractions on your computer are no more. You can simply enter websites, gameservers, etc. into the program, and it will block them for you. You can even schedule blocking times, so you can't get distracted when you should be working. 
+                    <br><br>Want to see more? There's a dedicated section for Revisioner on this site, found <a href="revisioner/index.html" class="no-link-underline">here</a>.</p>
+            </div>
+
+            <div class="reveal indexdemo">
+                <h1>Want to monitor your systems and projects for outages?</h1>
+                <image src="/demos/statuspage.png" class="indexdemomedia"></image>
+                <p>Has the system outage caught you off guard before? Not any more. With this statuspage, it can track the status of your systems up to every minute, and notify you of any downtime. No port open on your systems? No problem - your systems can be set to regularly post their stats. If they miss a post, then they're assumed down. 
+                    <br>The entirety of the statuspage is equipped with User Access Levels, logging in via the legacy method or google oath. Users can be added to manage the statuspage with different privileges, as well as temporary admin invites. An API is also available, with API key management another part of the admin panel. 
+                    <br>The system also supports incidents, which have the functionality to have updates added, be resolved, deleted, etc.
+                    <br><br>Want to see more? You can view this project setup for my systems <a href="https://status.infinitydev.org.uk" class="no-link-underline">here</a>.</p>
+            </div>
+
+            <div class="reveal indexdemo">
+                <h1>A cool bot for your discord server</h1>
+                <image src="/demos/discordbot.png" class="indexdemomedia"></image>
+                <p>A lockdown project was to build a discord bot. Despite not being that computationally complex, it taught me a lot, especially about user experience: if a user can break something, they will, and they won't follow instructions. This was my first project designed to be properly used by the public, and successfully used by the public. To this date, it has been verified, although it is becoming a burden to maintain.
+                    <br><br>Want to see more? There is an in-depth page on this on our site, which can be found <a href="/bots/unavailable-for-comment/index.html" class="no-link-underline">here</a>.</p>
+            </div>
+
+            <div class="reveal indexdemo">
+                <h1>That's all from me for now</h1>
+                <p>I'm currently working on a project in Vulkan. Once that's finished, I plan to build an entire lightweight operating system. It's been a long journey to this point, but one I'll never forget. The path doesn't end here though - it winds through the very hills it took to get here, and towards the horizon it goes...
+                    <br><br>Want to contact me on social media? Socials are linked <a class="no-link-underline" href="#socials">below</a> (discord preferable).
+                </p>
+            </div>
+        </div>
+        
+        <!-- Revisioner ->
         <div class="fullpage" id="revisioner">
-            <!--<div class="topwaves">
+            <!-<div class="topwaves">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none" class="topwavessvg">
                     <path fill="#5000CA" fill-opacity="1" d="M0,224L0,160L205.7,160L205.7,128L411.4,128L411.4,64L617.1,64L617.1,160L822.9,160L822.9,64L1028.6,64L1028.6,288L1234.3,288L1234.3,192L1440,192L1440,0L1234.3,0L1234.3,0L1028.6,0L1028.6,0L822.9,0L822.9,0L617.1,0L617.1,0L411.4,0L411.4,0L205.7,0L205.7,0L0,0L0,0Z"></path>
                 </svg>
-            </div>-->
+            </div>->
             <div class="indexpagecenterwrapper reveal revealhiddenright">
                 <div class="innerindexpagecenter">
                     <div class="lefticonwrapper">
@@ -217,8 +259,8 @@
                             </p>
                             <div class="readmorebox move-up-on-hover">
                                 <a href="./revisioner/" class="no-link-underline readmoretext">Read more ❯</a>
-                                <!--./revisioner/-->
-                                <!--<img src="images/revisioner.png" class="navicon" alt="Revisioner">-->
+                                <!-./revisioner/-->
+                                <!--<img src="images/revisioner.png" class="navicon" alt="Revisioner">->
                             </div>
                         </div>
                     </div>
@@ -227,20 +269,20 @@
             </div>
 
 
-            <!--<div class="bottomwaves">
+            <!-<div class="bottomwaves">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="bottomwavessvg" preserveAspectRatio="none">
                     <path fill="#5000ca" fill-opacity="1" d="M0,0L0,224L205.7,224L205.7,96L411.4,96L411.4,224L617.1,224L617.1,288L822.9,288L822.9,64L1028.6,64L1028.6,160L1234.3,160L1234.3,96L1440,96L1440,320L1234.3,320L1234.3,320L1028.6,320L1028.6,320L822.9,320L822.9,320L617.1,320L617.1,320L411.4,320L411.4,320L205.7,320L205.7,320L0,320L0,320Z"></path>
                 </svg>
-            </div>-->
+            </div>->
         </div>
 
-        <!-- Discord Bots -->
+        <!- Discord Bots ->
         <div class="fullpage" id="discordbots">
-            <!--<div class="topwaves">
+            <!-<div class="topwaves">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none" class="topwavessvg">
                     <path fill="#5000CA" fill-opacity="1" d="M0,224L0,160L205.7,160L205.7,128L411.4,128L411.4,64L617.1,64L617.1,160L822.9,160L822.9,64L1028.6,64L1028.6,288L1234.3,288L1234.3,192L1440,192L1440,0L1234.3,0L1234.3,0L1028.6,0L1028.6,0L822.9,0L822.9,0L617.1,0L617.1,0L411.4,0L411.4,0L205.7,0L205.7,0L0,0L0,0Z"></path>
                 </svg>
-            </div>-->
+            </div>->
 
             <div class="indexpagecenterwrapper reveal revealhiddenright">
                 <div class="innerindexpagecenter">
@@ -259,27 +301,27 @@
                             </p>
                             <div class="readmorebox move-up-on-hover">
                                 <a href="./bots/unavailable-for-comment/" class="no-link-underline readmoretext">Read
-                                    more ❯</a> <!--./revisioner/-->
-                                <!--<img src="images/revisioner.png" class="navicon" alt="Revisioner">-->
+                                    more ❯</a> <!-./revisioner/-->
+                                <!--<img src="images/revisioner.png" class="navicon" alt="Revisioner">->
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!--<div class="bottomwaves">
+            <!-<div class="bottomwaves">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="bottomwavessvg" preserveAspectRatio="none">
                     <path fill="#5000ca" fill-opacity="1" d="M0,0L0,224L205.7,224L205.7,96L411.4,96L411.4,224L617.1,224L617.1,288L822.9,288L822.9,64L1028.6,64L1028.6,160L1234.3,160L1234.3,96L1440,96L1440,320L1234.3,320L1234.3,320L1028.6,320L1028.6,320L822.9,320L822.9,320L617.1,320L617.1,320L411.4,320L411.4,320L205.7,320L205.7,320L0,320L0,320Z"></path>
                 </svg>
-            </div>-->
-        </div>
+            </div>->
+        </div>-->
 
         <!-- Projects-->
-        <div class="fullpage" id="projects">
-            <!--<div class="topwaves">
+        <!--<div class="fullpage" id="projects">
+            <!-<div class="topwaves">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none" class="topwavessvg">
                     <path fill="#5000CA" fill-opacity="1" d="M0,224L0,160L205.7,160L205.7,128L411.4,128L411.4,64L617.1,64L617.1,160L822.9,160L822.9,64L1028.6,64L1028.6,288L1234.3,288L1234.3,192L1440,192L1440,0L1234.3,0L1234.3,0L1028.6,0L1028.6,0L822.9,0L822.9,0L617.1,0L617.1,0L411.4,0L411.4,0L205.7,0L205.7,0L0,0L0,0Z"></path>
                 </svg>
-            </div>-->
+            </div>--
             <div class="indexpagecenterwrapper reveal revealhiddenright">
                 <div class="innerindexpagecenter">
                     <div class="lefticonwrapper">
@@ -296,19 +338,19 @@
                             </p>
                             <div class="readmorebox move-up-on-hover">
                                 <a href="./projects/" class="no-link-underline readmoretext">Read more ❯</a>
-                                <!--./revisioner/-->
-                                <!--<img src="images/revisioner.png" class="navicon" alt="Revisioner">-->
+                                <!-./revisioner/-->
+                                <!--<img src="images/revisioner.png" class="navicon" alt="Revisioner">--
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!--<div class="bottomwaves">
+            <!-<div class="bottomwaves">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="bottomwavessvg" preserveAspectRatio="none">
                     <path fill="#5000ca" fill-opacity="1" d="M0,0L0,224L205.7,224L205.7,96L411.4,96L411.4,224L617.1,224L617.1,288L822.9,288L822.9,64L1028.6,64L1028.6,160L1234.3,160L1234.3,96L1440,96L1440,320L1234.3,320L1234.3,320L1028.6,320L1028.6,320L822.9,320L822.9,320L617.1,320L617.1,320L411.4,320L411.4,320L205.7,320L205.7,320L0,320L0,320Z"></path>
                 </svg>
-            </div>-->
-        </div>
+            </div>->
+        </div>-->
 
         <!-- Contact / socials -->
         <div class="fullpage" id="socials">

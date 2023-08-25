@@ -224,8 +224,7 @@ html {
   border: 1px solid rgba(255, 255, 255, 0.03);
   /*border-radius: 2vmax;*/
   display: flex;
-  min-width: 60%;
-  width: 60vmax;
+  width: fit-content;
   max-width: 95vw;
   display: flex;
   align-items: center;
@@ -237,6 +236,7 @@ html {
 
 
 
+/* Legacy demo list */
 .indexpagecenterwrapper {
   position: absolute;
   left: 50%; /* relative to nearest positioned ancestor or body element */

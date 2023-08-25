@@ -1,5 +1,6 @@
 :root {
   --index-section-heading-font-size: 5vw;
+  --index-section-subheading-font-size: 3vw;
   --index-scrolling-section-bg: rgba(110, 92, 247, 0.1);
   --index-blue-red-border-size: 0.25vmax;
 }
@@ -191,9 +192,9 @@
   text-align: left;
 }
 
-.pageheadline {
+.pageheadline, .pagesubheading {
   font-family: Lato;
-  font-size: var(--index-section-heading-font-size);
+  
   color: #ffffffc5;
   margin-bottom: 0px;
   margin-top: 0px;
@@ -201,6 +202,15 @@
   font-weight: 100;
   line-height: 100%;
 }
+
+.pageheadline {
+  font-size: var(--index-section-heading-font-size);
+}
+
+.pagesubheading {
+  font-size: var(--index-section-subheading-font-size);
+}
+
 
 #indexscrollingsection::before {
   content: "";
@@ -245,6 +255,7 @@
   background-position: center;
   background-repeat: no-repeat;
   border-radius: var(--border-radius);
+  min-width: 50vw;
 }
 
 @keyframes bg-spin {
@@ -257,4 +268,42 @@
   syntax: "<angle>";
   inherits: true;
   initial-value: 0turn;
+}
+
+#indexdemoslist {
+  display: flex;
+  flex-direction: column;
+  gap: 10vmax;
+  padding: 10vmax 0;
+}
+
+.indexdemo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  min-width: 50vw;
+  width: min-content;
+  max-width: 80vw;
+  margin: 0 auto;
+  background-color: rgba(0,0,0,0.5);
+  gap: 0px;
+  padding: 0.5vmax 1.5vmax;
+  border-radius: 2vmax;
+  border: 1px solid rgba(245, 245, 245, 0.2);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.indexdemomedia {
+  border-radius: 1vmax;
+  padding: 0px;
+  min-width: 60vw;
+  max-width: 100%;
+}
+
+
+.videocontainer {
+  
+  opacity: 0.9;
 }

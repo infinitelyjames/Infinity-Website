@@ -296,8 +296,8 @@ a:hover {
   justify-content: center;
   overflow: hidden;
   min-width: 50vw;
-  width: min-content;
-  max-width: 80vw;
+  width: 60vmax;
+  max-width: 90vw;
   margin: 0 auto;
   background-color: rgba(0,0,0,0.5);
   gap: 0px;

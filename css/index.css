@@ -78,7 +78,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  gap: 0.7vh;
+  gap: 0.3vmin;
   padding-top: 2vh;
 }
 

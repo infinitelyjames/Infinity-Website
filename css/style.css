@@ -555,11 +555,9 @@ html {
   font-family: Comfortaa;
   font-size: 1.2vw;
   color: #ffffff;
-
   padding: 1vw;
-  margin-bottom: 0px;
   border-radius: 0.9vw;
-  margin: 0px 0.05vw 0px 0.05vw;
+  margin: 0px;
   box-shadow: rgba(100, 100, 111, 1) 0px 7px 29px 0px;
   width: 20vw;
   min-width: 200px;
@@ -942,7 +940,7 @@ th {
 
   text-align: center;
   margin: 0;
-  padding-bottom: 0.3vh;
+  padding-bottom: 0px;
 }
 
 .backbtnwrapper {

@@ -8,6 +8,7 @@ var spanCloseDiscordModal = document.getElementById("closeDiscordModal");
 
 
 function showDiscordModal() {
+    console.log("showing discord modal");
     discordModal.style.display = "block";
 }
 

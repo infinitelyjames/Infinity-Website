@@ -658,17 +658,18 @@ html {
 }
 
 .discordMenu {
-
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20vh;
-  position: sticky;
-  background-color: rgba(18, 18, 30, 0.9);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  background-color: rgba(18, 18, 30, 0.98);
   width: fit-content;
   padding: 1vw;
   border-radius: 1vw;
   min-width: 30vw;
   width: 50%;
+  z-index: 6;
 }
 
 .discordMenuContents {

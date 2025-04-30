@@ -28,6 +28,63 @@
     <div class="fullpage indexbg homepage" id="homepage">
 
         <div id="particles-js">
+
+            <!-- Popups and modal content below-->
+
+            <!-- Popup for the credits -->
+            <div id="creditsMenu" class="creditsMenu fade-in" hidden>
+                <div class="creditsMenuContents">
+                    <span class="closeCredits">&times;</span>
+                    <p>This website is managed and maintained by <a href="javascript:void(0);"
+                            class="styled-link">Infinity.</a> <br>Thanks to <a href="https://ginger-ninja.uk/"
+                            class="styled-link" target="_blank">Diacius</a> for helping.<br>
+                        This site uses <a href="https://github.com/VincentGarreau/particles.js" target="_blank"
+                            class="styled-link">particles.js from GitHub</a>.</p>
+                    <p style="padding-top: 1vh;">You can view and fork this website freely on <a
+                            href="https://github.com/infinitelyjames/Infinity-Website" target="_blank"
+                            class="no-link-underline styled-link">GitHub</a>, although please comply with the license
+                        details available there.</p>
+                </div>
+            </div>
+
+            <!-- discord menu -->
+            <div id="discordMenu" class="discordMenu fade-in" hidden>
+                <div class="discordMenuContents">
+                    <span id="closeDiscordModal">&times;</span>
+                    <div class="discordnamewrapper">
+                        <img src="https://cdn.discordapp.com/avatars/684835388505849879/8b01f57f6a9bb8abde6f3f6d07929160.png?size=1024
+                            id="discordpopuppfp" alt="Profile Picture">
+                        <p class="discordname">codebyte</p>
+                    </div>
+
+                    <h2>Featured Servers</h2>
+                    <div id="discordservercontainer">
+                        <div id="server1">
+                            <a href="https://discord.com/invite/nacfvPB" target="_blank">
+                                <img class="discordserverpfp"
+                                    src="https://cdn.discordapp.com/icons/695186313569107988/d1809d7cfe7040eefddc0a0f4b97ba65.png?size=1024">
+                                <p>My own friendly server covering all of my projects. Just a hub for bug reports, and
+                                    discussions around programming topics.</p>
+                            </a>
+                        </div>
+                        <div id="server2" hidden>
+                            <a href="https://discord.gg/skUenYWtmJ" target="_blank">
+                                <img class="discordserverpfp"
+                                    src="https://cdn.discordapp.com/icons/942048798010662953/2f1fcfd695e3be0507cffb9e8c54eeed.png?size=1024">
+                                <p>Some other cool server I help moderate, chill and help people learn to code.</p>
+                            </a>
+                        </div>
+
+                        <div class="prevserverbtnwrapper slideshowbutton" onclick="showOtherServer()">
+                            <a class="prevserverbtn">&#10094;</a>
+                        </div>
+                        <div class="nextserverbtnwrapper slideshowbutton" onclick="showOtherServer()">
+                            <a class="nextserverbtn">&#10095;</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
             <div class="rotatingborderouter centercontainer">
                 <!-- center page content, profile summary-->
                 <div class="rotatingborderinner centercontainerinner">
@@ -88,6 +145,21 @@
                 </div>
             </div>
 
+            <div id="socialsleftwrapper">
+                <div class="rainbowwrapper">
+                    <div id="socialsleftinner">
+                        <div id="discordBtn"><a  href="javascript:void(0);"><img src="images/discord.png" alt="Discord" class="socialicon"> </a></div>
+                        <a href="https://github.com/@infinitelyjames"><img src="images/github.png" class="socialicon"></a>
+                        <a href="mailto:infinity@infinitydev.org.uk" target="_blank"><img src="images/email.png" alt="Email" class="socialicon"></a>
+                        <div id="creditsBtn">
+                            <a href="javascript:void(0);" class="styled-link"><img src="images/copyright.png"
+                                    alt="Copyright" class="socialicon"></a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
 
             <!-- statuspage link -->
             <!--<div class="statuspagecontainer">
@@ -128,9 +200,13 @@
             <!-- particles -->
             <script src="./particlesjs/particles.js"></script>
             <script src="./particlesjs/js/app.js"></script>
+
+            
         </div>
 
     </div>
+
+    
 
     <!-- Scrolling section begins-->
 
@@ -365,13 +441,13 @@
         </div>-->
 
         <!-- Contact / socials -->
-        <div class="fullpage" id="socials">
+        <!-- <div class="fullpage" id="socials">
             <div class="indexpagecenterwrapper reveal revealhiddenright">
                 <div class="innerindexpagecenter" id="contactwrapper">
                     <h1 class="nobold pageheadline">Socials</h1>
                     <div class="socials">
                         <div class="socialboxwrapper">
-                            <div class="socialbox" id="discordBtn">
+                            <div class="socialbox">
                                 <a href="javascript:void(0);" class="styled-link"><img src="images/discord.png"
                                         alt="Discord" class="socialicon"> <span
                                         class="contactssocialtext">Discord</span></a>
@@ -395,7 +471,7 @@
                         </div>
 
                         <div class="socialboxwrapper">
-                            <div class="socialbox" id="creditsBtn">
+                            <div class="socialbox">
                                 <a href="javascript:void(0);" class="styled-link"><img src="images/copyright.png"
                                         alt="Copyright" class="socialicon"> <span
                                         class="contactssocialtext">Credits</span></a>
@@ -404,63 +480,7 @@
                     </div>
                 </div>
             </div>
-            <!-- Popups and modal content below-->
-
-            <!-- Popup for the credits -->
-            <div id="creditsMenu" class="creditsMenu fade-in" hidden>
-                <div class="creditsMenuContents">
-                    <span class="closeCredits">&times;</span>
-                    <p>This website is managed and maintained by <a href="javascript:void(0);"
-                            class="styled-link">Infinity.</a> <br>Thanks to <a href="https://ginger-ninja.uk/"
-                            class="styled-link" target="_blank">Diacius</a> for helping.<br>
-                        This site uses <a href="https://github.com/VincentGarreau/particles.js" target="_blank"
-                            class="styled-link">particles.js from GitHub</a>.</p>
-                    <p style="padding-top: 1vh;">You can view and fork this website freely on <a
-                            href="https://github.com/infinitelyjames/Infinity-Website" target="_blank"
-                            class="no-link-underline styled-link">GitHub</a>, although please comply with the license
-                        details available there.</p>
-                </div>
-            </div>
-
-            <!-- discord menu -->
-            <div id="discordMenu" class="discordMenu fade-in" hidden>
-                <div class="discordMenuContents">
-                    <span id="closeDiscordModal">&times;</span>
-                    <div class="discordnamewrapper">
-                        <img src="https://cdn.discordapp.com/avatars/684835388505849879/8b01f57f6a9bb8abde6f3f6d07929160.png?size=1024
-                            id="discordpopuppfp" alt="Profile Picture">
-                        <p class="discordname">codebyte</p>
-                    </div>
-
-                    <h2>Featured Servers</h2>
-                    <div id="discordservercontainer">
-                        <div id="server1">
-                            <a href="https://discord.com/invite/nacfvPB" target="_blank">
-                                <img class="discordserverpfp"
-                                    src="https://cdn.discordapp.com/icons/695186313569107988/d1809d7cfe7040eefddc0a0f4b97ba65.png?size=1024">
-                                <p>My own friendly server covering all of my projects. Just a hub for bug reports, and
-                                    discussions around programming topics.</p>
-                            </a>
-                        </div>
-                        <div id="server2" hidden>
-                            <a href="https://discord.gg/skUenYWtmJ" target="_blank">
-                                <img class="discordserverpfp"
-                                    src="https://cdn.discordapp.com/icons/942048798010662953/2f1fcfd695e3be0507cffb9e8c54eeed.png?size=1024">
-                                <p>Some other cool server I help moderate, chill and help people learn to code.</p>
-                            </a>
-                        </div>
-
-                        <div class="prevserverbtnwrapper slideshowbutton" onclick="showOtherServer()">
-                            <a class="prevserverbtn">&#10094;</a>
-                        </div>
-                        <div class="nextserverbtnwrapper slideshowbutton" onclick="showOtherServer()">
-                            <a class="nextserverbtn">&#10095;</a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
+        </div> -->
     </div>
 
     <!-- Right-click menu -->

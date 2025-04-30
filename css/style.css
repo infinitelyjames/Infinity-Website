@@ -337,13 +337,13 @@ html {
   margin: 0;
   content: '';
   position: relative;
-  background: linear-gradient(90deg, #f03, purple, #08f, #f03);
+  background: linear-gradient(15deg, #f03, purple, #08f, #f03);
   background-size: 500%;
   width: 100%;
   /*calc(100% + 4px);*/
   border-radius: 1vw;
   z-index: -1;
-  animation: steam 140s linear infinite;
+  animation: steam 30s linear infinite;
   overflow: hidden;
 
 }

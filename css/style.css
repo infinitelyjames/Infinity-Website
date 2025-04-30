@@ -337,8 +337,7 @@ html {
   margin: 0;
   content: '';
   position: relative;
-  background: linear-gradient(90deg, rgba(251, 0, 148, 0.6), #0000ff, rgba(0, 255, 0, 0.6), rgba(255, 255, 0, 0.9), rgba(255, 0, 0, 0.6), rgba(251, 0, 148, 0.6),
-      rgba(0, 0, 255, 0.9), rgba(0, 255, 0, 0.6), rgba(255, 255, 0, 0.6), rgb(255, 0, 0, 0.6));
+  background: linear-gradient(90deg, #f03, purple, #08f, #f03);
   background-size: 500%;
   width: 100%;
   /*calc(100% + 4px);*/

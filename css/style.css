@@ -332,7 +332,7 @@ html {
   */
 }
 
-#rainbowwrapper {
+.rainbowwrapper {
   /* , #rainbowwrapper:after*/
   margin: 0;
   content: '';

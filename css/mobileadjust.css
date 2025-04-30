@@ -44,7 +44,7 @@
         -webkit-line-clamp: 8; /* number of lines to show */
           line-clamp: 8; 
     }
-    #rainbowwrapper {
+    .rainbowwrapper {
         width: 60%;
         margin: auto;
     }

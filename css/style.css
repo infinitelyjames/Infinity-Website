@@ -574,9 +574,10 @@ html {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: center;
   gap: 1vmax;
   justify-content: center;
-  width: fit-content;
+  
 }
 
 .navbox {

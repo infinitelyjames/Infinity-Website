@@ -94,14 +94,14 @@ ul {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(91, 47, 250, 0.9);
+  background: linear-gradient(0deg, rgba(255, 0, 51,0.8) 0%, rgba(99, 9, 121, 1) 30%, rgba(50, 1, 93, 1) 60%, rgba(9, 9, 121, 1) 98%);
   border-radius: 0.2vw;
 }
 
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
+/* ::-webkit-scrollbar-thumb:hover {
   background: rgba(91, 47, 250, 0.9);
-}
+} */
 
 .homepage {
   /*background-color: #36393F;
